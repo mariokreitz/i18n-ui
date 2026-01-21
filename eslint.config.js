@@ -7,6 +7,9 @@ const prettier = require('eslint-plugin-prettier/recommended');
 
 module.exports = defineConfig([
   {
+    ignores: ['**/.angular/**', '.angular', 'dist/**', 'node_modules/**', 'coverage/**'],
+  },
+  {
     files: ['**/*.ts'],
     extends: [eslint.configs.recommended, ...tseslint.configs.recommended, ...tseslint.configs.stylistic, ...angular.configs.tsRecommended],
     processor: angular.processInlineTemplates,
