@@ -7,5 +7,6 @@ import { Header } from '../../components/header/header';
   imports: [Header, Footer],
   templateUrl: './root-layout.html',
   styleUrl: './root-layout.css',
+  host: { class: 'min-h-screen flex flex-col' },
 })
 export class RootLayout {}

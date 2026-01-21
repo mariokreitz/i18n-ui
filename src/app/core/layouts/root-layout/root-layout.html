@@ -1,5 +1,13 @@
-<app-header />
-<main class="app-main" id="main">
-  <ng-content></ng-content>
-</main>
-<app-footer></app-footer>
+<header class="container mx-auto px-2 py-4">
+  <app-header />
+</header>
+
+<div class="container mx-auto flex-1 overflow-auto px-2 py-4">
+  <main class="flex-1" role="main" tabindex="-1">
+    <ng-content />
+  </main>
+</div>
+
+<footer class="container mx-auto px-2 py-4">
+  <app-footer />
+</footer>
