@@ -1,6 +1,6 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faNpm } from '@fortawesome/free-brands-svg-icons/faNpm';
-import { SocialMediaLink } from '../interfaces/social-media-link.interface';
+import { SocialMediaLink } from '../interfaces';
 
 export const SOCIAL_MEDIA_LINKS: SocialMediaLink[] = [
   {
