@@ -1,0 +1,10 @@
+
+# Ignore artifacts:
+build
+coverage
+dist
+.angular
+.git
+.idea
+.vscode
+node_modules
