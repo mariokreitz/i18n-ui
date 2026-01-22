@@ -1,0 +1,11 @@
+<nav class="border-i18n-white/30 rounded-full border px-8 py-2">
+  <ul class="flex gap-4">
+    @for (link of SOCIAL_MEDIA_LINKS; track $index) {
+      <li class="flex items-center justify-center" id="social-{{ link.name | lowercase }}">
+        <a [href]="link.url" [title]="link.name" target="_blank">
+          <fa-icon [icon]="link.faIcon" class="text-xl" />
+        </a>
+      </li>
+    }
+  </ul>
+</nav>
