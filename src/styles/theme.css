@@ -1,4 +1,9 @@
 @theme {
   --color-midnight: #01030f;
   --font-family-inter: 'Inter', system-ui, -apple-system, sans-serif;
+  --color-i18n-white: #f9faf9;
+  --color-i18n-blue: #256196;
+  --color-i18n-light-blue: #d4dff1;
+  --color-i18n-lighter-green: #5bad63;
+  --color-i18n-light-green: #48a95a;
 }
