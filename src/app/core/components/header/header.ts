@@ -1,15 +1,11 @@
-import { LowerCasePipe, NgOptimizedImage } from '@angular/common';
+import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
-import { FaIconComponent } from '@fortawesome/angular-fontawesome';
-import { SOCIAL_MEDIA_LINKS } from '../../constants/social-media-links.constant';
-import { SocialMediaLink } from '../../interfaces';
+import { NavSocial } from '../navigation/nav-social/nav-social';
 
 @Component({
   selector: 'app-header',
-  imports: [LowerCasePipe, FaIconComponent, NgOptimizedImage],
+  imports: [NgOptimizedImage, NavSocial],
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
-export class Header {
-  public readonly SOCIAL_MEDIA_LINKS: SocialMediaLink[] = SOCIAL_MEDIA_LINKS;
-}
+export class Header {}

@@ -6,14 +6,4 @@
     >-manager
   </p>
 </div>
-<nav>
-  <ul class="flex gap-4">
-    @for (link of SOCIAL_MEDIA_LINKS; track $index) {
-      <li class="flex items-center justify-center" id="social-{{ link.name | lowercase }}">
-        <a [href]="link.url" [title]="link.name" class="rounded border p-1" target="_blank">
-          <fa-icon [icon]="link.faIcon" class="text-2xl" />
-        </a>
-      </li>
-    }
-  </ul>
-</nav>
+<app-nav-social />
