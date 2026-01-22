@@ -1,0 +1,10 @@
+@layer base {
+  body {
+    @apply bg-midnight text-white;
+    font-family: var(--font-family-inter, system-ui, -apple-system, sans-serif), sans-serif;
+  }
+
+  .bg-midnight {
+    background-color: var(--color-midnight);
+  }
+}

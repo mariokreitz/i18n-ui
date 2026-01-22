@@ -1,0 +1,54 @@
+@layer utilities {
+  .font-inter {
+    font-family: var(--font-family-inter, 'Inter', system-ui, -apple-system, sans-serif), sans-serif;
+  }
+
+  .font-inter-thin {
+    font-family: var(--font-family-inter, 'Inter', system-ui, -apple-system, sans-serif), sans-serif;
+    font-weight: 100;
+  }
+
+  .font-inter-extralight {
+    font-family: var(--font-family-inter, 'Inter', system-ui, -apple-system, sans-serif), sans-serif;
+    font-weight: 200;
+  }
+
+  .font-inter-light {
+    font-family: var(--font-family-inter, 'Inter', system-ui, -apple-system, sans-serif), sans-serif;
+    font-weight: 300;
+  }
+
+  .font-inter-normal {
+    font-family: var(--font-family-inter, 'Inter', system-ui, -apple-system, sans-serif), sans-serif;
+    font-weight: 400;
+  }
+
+  .font-inter-medium {
+    font-family: var(--font-family-inter, 'Inter', system-ui, -apple-system, sans-serif), sans-serif;
+    font-weight: 500;
+  }
+
+  .font-inter-semibold {
+    font-family: var(--font-family-inter, 'Inter', system-ui, -apple-system, sans-serif), sans-serif;
+    font-weight: 600;
+  }
+
+  .font-inter-bold {
+    font-family: var(--font-family-inter, 'Inter', system-ui, -apple-system, sans-serif), sans-serif;
+    font-weight: 700;
+  }
+
+  .font-inter-extrabold {
+    font-family: var(--font-family-inter, 'Inter', system-ui, -apple-system, sans-serif), sans-serif;
+    font-weight: 800;
+  }
+
+  .font-inter-black {
+    font-family: var(--font-family-inter, 'Inter', system-ui, -apple-system, sans-serif), sans-serif;
+    font-weight: 900;
+  }
+
+  .italic-inter {
+    font-style: italic;
+  }
+}
