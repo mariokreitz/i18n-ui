@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, input, InputSignal } from '@angular/core';
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 import { TranslatePipe } from '@ngx-translate/core';
-import { i18nExcelManagerFeature } from '../../core/interfaces';
+import { i18nExcelManagerFeature } from '../../../core/interfaces';
 
 @Component({
   selector: 'app-feature-card',
