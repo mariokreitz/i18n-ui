@@ -1,1 +1,13 @@
-<p>language-switch works!</p>
+<button (click)="toggleMenuSelection()" class="border-i18n-white/30 rounded-full border px-4 py-2" type="button">
+  <fa-icon [icon]="langIcon" class="text-xl" />
+</button>
+
+@if (isMenuOpen()) {
+  <ul class="bg-midnight absolute top-16 right-0 z-30 flex flex-col gap-4">
+    @for (lang of languages(); track $index) {
+      <li class="hover:bg-i18n-lighter-green flex items-center justify-center px-2 py-1" id="lang-{{ lang | lowercase }}">
+        <button (click)="onSelectLang(lang)" type="button">{{ 'languageNames.' + lang | translate }}</button>
+      </li>
+    }
+  </ul>
+}
