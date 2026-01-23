@@ -57,5 +57,8 @@
         "description": "Preview changes without writing files. Safe path validation included."
       }
     }
+  },
+  "footer": {
+    "quickLinks": "Quick Links"
   }
 }
