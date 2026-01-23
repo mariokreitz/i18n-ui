@@ -5,7 +5,7 @@ import hljs from 'highlight.js';
   selector: 'code[appHighlightCode]',
 })
 export class HighlightCodeDirective implements AfterViewInit {
-  public readonly language: InputSignal<string> = input<string>('typescript');
+  public readonly language: InputSignal<string> = input.required<string>();
   private readonly el: ElementRef<HTMLElement> = inject(ElementRef<HTMLElement>);
 
   public ngAfterViewInit(): void {
