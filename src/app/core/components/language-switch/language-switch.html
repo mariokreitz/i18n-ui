@@ -3,9 +3,13 @@
 </button>
 
 @if (isMenuOpen()) {
-  <ul class="bg-midnight absolute top-16 right-0 z-30 flex flex-col gap-4">
+  <ul class="bg-midnight absolute top-16 right-0 z-30 flex flex-col">
     @for (lang of languages(); track $index) {
-      <li class="hover:bg-i18n-lighter-green flex items-center justify-center px-2 py-1" id="lang-{{ lang | lowercase }}">
+      <li
+        [class.bg-i18n-lighter-green]="isCurrentLanguage()(lang)"
+        class="hover:bg-i18n-lighter-green flex items-center justify-center px-2 py-1 transition-colors"
+        id="lang-{{ lang | lowercase }}"
+      >
         <button (click)="onSelectLang(lang)" type="button">{{ 'languageNames.' + lang | translate }}</button>
       </li>
     }
