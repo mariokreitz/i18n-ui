@@ -14,14 +14,14 @@
 
   app-header,
   app-footer {
-    @apply flex items-center justify-between px-8 py-4;
+    @apply container mx-auto flex items-center justify-between px-8 py-4;
   }
 
-  app-header {
+  #header {
     @apply border-b-i18n-light-blue/30 border-b;
   }
 
-  app-footer {
+  #footer {
     @apply border-t-i18n-light-blue/30 border-t;
   }
 }
