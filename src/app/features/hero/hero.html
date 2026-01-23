@@ -1,1 +1,40 @@
-<p>hero works!</p>
+<div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10 flex items-center justify-center">
+  <img alt="Star Illustration" class="h-full w-full object-cover py-8" height="836" ngSrc="/assets/images/png/Stars.png" width="1421" />
+</div>
+
+<section class="hero-gradient relative flex w-full flex-1 items-end justify-end">
+  <header class="absolute top-0 left-0 z-20 flex h-full w-full max-w-140 flex-col items-start justify-center gap-8 xl:max-w-160">
+    <p class="bg-midnight border-i18n-white/30 flex items-center rounded-full border px-2 py-1 text-sm md:text-base">
+      <span class="text-midnight bg-i18n-white mr-2 rounded-full px-1 text-xs font-bold">{{
+        'hero.newBadge' | translate | uppercase
+      }}</span>
+      {{ 'hero.newFeature' | translate }}
+    </p>
+    <h1 class="text-3xl font-bold sm:text-5xl xl:text-7xl">{{ 'hero.title' | translate }}</h1>
+    <p>{{ 'hero.subTitle' | translate }}</p>
+    <div class="border-i18n-white/30 bg-midnight flex gap-8 rounded-full border px-4 py-2 text-sm sm:text-base md:px-6 md:py-3">
+      <p type="button">{{ installCommand }}</p>
+      <button (click)="copyToClipboard()" [disabled]="isCopySuccess()" type="button">
+        @if (!isCopySuccess()) {
+          <fa-icon [icon]="copyIcon" />
+        } @else {
+          <fa-icon [icon]="successIcon" class="text-i18n-light-green" />
+        }
+      </button>
+    </div>
+  </header>
+  <img
+    alt="AI Model Glow"
+    class="absolute right-8 bottom-0 -z-10 hidden h-3/4 w-auto lg:block"
+    height="1117"
+    ngSrc="/assets/images/png/Model_Glow.png"
+    width="980"
+  />
+  <img
+    alt="AI Model"
+    class="absolute right-0 bottom-0 hidden h-3/4 w-auto lg:block"
+    height="1045"
+    ngSrc="/assets/images/png/AI_Model.png"
+    width="1032"
+  />
+</section>
