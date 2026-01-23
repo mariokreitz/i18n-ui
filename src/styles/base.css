@@ -4,12 +4,17 @@
     font-family: var(--font-family-inter, system-ui, -apple-system, sans-serif), sans-serif;
   }
 
-  button {
+  button,
+  a {
     @apply cursor-pointer;
   }
 
   button:disabled {
     @apply cursor-not-allowed;
+  }
+
+  a[href] {
+    @apply hover:underline;
   }
 
   app-header,
