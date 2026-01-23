@@ -4,6 +4,14 @@
     font-family: var(--font-family-inter, system-ui, -apple-system, sans-serif), sans-serif;
   }
 
+  button {
+    @apply cursor-pointer;
+  }
+
+  button:disabled {
+    @apply cursor-not-allowed;
+  }
+
   app-header,
   app-footer {
     @apply flex items-center justify-between px-8 py-4;
