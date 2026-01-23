@@ -1,1 +1,9 @@
-{}
+{
+  "hero": {
+    "getStarted": "Get Started",
+    "newBadge": "new",
+    "newFeature": "Latest integration just arrived",
+    "subTitle": "Effortless conversion between i18n JSON files and Excel for Angular and modern web projects.",
+    "title": "Revolutionize Your i18n translations with AI"
+  }
+}
