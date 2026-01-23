@@ -78,5 +78,13 @@
   },
   "footer": {
     "quickLinks": "Quick Links"
+  },
+  "languageNames": {
+    "en": "English",
+    "de": "German",
+    "fr": "French",
+    "es": "Spanish",
+    "pt": "Portuguese",
+    "tr": "Turkish"
   }
 }
