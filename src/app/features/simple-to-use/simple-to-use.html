@@ -52,9 +52,9 @@ await convertToExcel(
 <section class="flex flex-col gap-12 py-16 sm:gap-16 sm:py-20 lg:gap-20 lg:py-24">
   <div class="flex flex-col items-center justify-center gap-8 lg:gap-16 xl:gap-20">
     <div class="grid w-full grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:gap-12">
-      <div class="flex flex-col gap-8">
+      <article class="flex flex-col gap-8">
         <p class="bg-i18n-lighter-blue text-i18n-light-blue w-fit rounded-full px-4 py-2">
-          <fa-icon [icon]="aiIcon" />
+          <fa-icon [icon]="aiIcon" class="animate-pulse" />
           {{ 'simpleToUse.aiSection.aiBadge' | translate }}
         </p>
         <h3 class="text-xl font-bold lg:text-3xl xl:text-4xl">{{ 'simpleToUse.aiSection.title' | translate }}</h3>
@@ -71,7 +71,29 @@ await convertToExcel(
             </li>
           }
         </ul>
-      </div>
+      </article>
+      <article class="flex flex-col gap-8 p-8">
+        <div class="code-card">
+          <p class="code-card-title"># Before AI translation</p>
+          <pre class="overflow-x-auto"><code [language]="'json'" appHighlightCode>"greeting": &#123;
+  "en": "Good morning!",
+  "de": "",
+  "fr": ""
+&#125;</code></pre>
+        </div>
+        <p class="text-i18n-lighter-blue">
+          <fa-icon [icon]="aiIcon" class="animate-pulse" />
+          {{ 'simpleToUse.aiSection.aiTranslating' | translate }}
+        </p>
+        <div class="code-card">
+          <p class="code-card-title"># After AI translation</p>
+          <pre class="overflow-x-auto"><code [language]="'json'" appHighlightCode>"greeting": &#123;
+  "en": "Good morning!",
+  "de": "Guten Morgen!",
+  "fr": "Bonjour!"
+&#125;</code></pre>
+        </div>
+      </article>
     </div>
   </div>
 </section>
