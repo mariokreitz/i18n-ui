@@ -23,10 +23,10 @@
   }
 
   #header {
-    @apply border-b-i18n-light-blue/30 border-b;
+    @apply border-b-i18n-lighter-blue/30 border-b;
   }
 
   #footer {
-    @apply border-t-i18n-light-blue/30 border-t;
+    @apply border-t-i18n-lighter-blue/30 border-t;
   }
 }
