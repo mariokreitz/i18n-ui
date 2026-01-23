@@ -1,14 +1,35 @@
-<section>
+<section class="flex flex-col gap-16 py-24">
   <header>
     <h2>Simple to use</h2>
     <p>Get started with a single command or integrate programmatically</p>
   </header>
-  <!-- interactive cli - menu example	-->
-  <article>
-    <app-code-card />
-  </article>
-  <!-- public api - convertToExcel example-->
-  <article>
-    <app-code-card />
-  </article>
+  <div class="flex items-center justify-center gap-32">
+    <!-- interactive cli - menu example	-->
+    <app-code-card>
+      <app-code-card-title>Terminal</app-code-card-title>
+      <app-code-card-body></app-code-card-body>
+    </app-code-card>
+
+    <!-- public api - convertToExcel example-->
+    <app-code-card>
+      <app-code-card-title>index.ts</app-code-card-title>
+      <app-code-card-body>
+        <pre><code appHighlightCode>import &#123; convertToExcel &#125; from 'i18n-excel-manager';
+
+await convertToExcel(
+  './public/assets/i18n',
+  'translations.xlsx',
+  &#123;
+    sheetName: 'Translations',
+    languageMap: &#123;
+      en: 'English',
+      de: 'Deutsch'
+    &#125;
+  &#125;
+);
+
+// Output: ✅ Created translations.xlsx</code></pre>
+      </app-code-card-body>
+    </app-code-card>
+  </div>
 </section>
