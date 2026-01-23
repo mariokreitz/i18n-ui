@@ -1,7 +1,7 @@
-<section class="flex flex-col gap-12 px-4 py-16 sm:gap-16 sm:px-8 sm:py-20 lg:gap-20 lg:py-24">
+<section class="flex flex-col gap-12 py-16 sm:gap-16 sm:py-20 lg:gap-20 lg:py-24">
   <header class="flex flex-col gap-3 text-center sm:gap-4">
-    <h2 class="text-2xl font-bold sm:text-3xl lg:text-5xl xl:text-6xl">Simple to use</h2>
-    <p class="text-sm sm:text-base lg:text-lg">Get started with a single command or integrate programmatically</p>
+    <h2 class="text-2xl font-bold sm:text-3xl lg:text-5xl xl:text-6xl">{{ 'simpleToUse.codeSection.title' | translate }}</h2>
+    <p class="text-sm sm:text-base lg:text-lg">{{ 'simpleToUse.codeSection.description' | translate }}</p>
   </header>
   <div class="flex flex-col items-center justify-center gap-8 lg:gap-16 xl:gap-20">
     <div class="grid w-full grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:gap-12">
@@ -9,11 +9,10 @@
       <app-code-card>
         <app-code-card-title>Terminal</app-code-card-title>
         <app-code-card-body>
-          <pre class="overflow-x-auto"><code [language]="'zsh'" appHighlightCode>v2.1.0
-Convert i18n files to Excel and back
+          <pre class="overflow-x-auto"><code [language]="'zsh'" appHighlightCode>{{ version + '\n' }}Convert i18n files to Excel and back
 
 ? Choose an action: (Use arrow keys)
-						
+
 ❯ Convert i18n files to Excel
   Convert Excel to i18n files
   Analyze Codebase
@@ -46,6 +45,33 @@ await convertToExcel(
 // Output: ✅ Created translations.xlsx</code></pre>
         </app-code-card-body>
       </app-code-card>
+    </div>
+  </div>
+</section>
+
+<section class="flex flex-col gap-12 py-16 sm:gap-16 sm:py-20 lg:gap-20 lg:py-24">
+  <div class="flex flex-col items-center justify-center gap-8 lg:gap-16 xl:gap-20">
+    <div class="grid w-full grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:gap-12">
+      <div class="flex flex-col gap-8">
+        <p class="bg-i18n-lighter-blue text-i18n-light-blue w-fit rounded-full px-4 py-2">
+          <fa-icon [icon]="aiIcon" />
+          {{ 'simpleToUse.aiSection.aiBadge' | translate }}
+        </p>
+        <h3 class="text-xl font-bold lg:text-3xl xl:text-4xl">{{ 'simpleToUse.aiSection.title' | translate }}</h3>
+        <p class="text-sm sm:text-base lg:text-lg">
+          {{ 'simpleToUse.aiSection.description' | translate }}
+        </p>
+        <ul class="flex flex-col gap-4">
+          @for (perk of aiPoweredPerks; track $index) {
+            <li class="flex items-center gap-4">
+              <p class="bg-i18n-lighter-blue flex h-6 w-6 items-center justify-center rounded-full">
+                <fa-icon [icon]="success" class="text-i18n-light-blue" />
+              </p>
+              <p>{{ perk | translate }}</p>
+            </li>
+          }
+        </ul>
+      </div>
     </div>
   </div>
 </section>
