@@ -1,10 +1,11 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
+import { LanguageSwitch } from '../language-switch/language-switch';
 import { NavSocial } from '../navigation/nav-social/nav-social';
 
 @Component({
   selector: 'app-header',
-  imports: [NgOptimizedImage, NavSocial],
+  imports: [NgOptimizedImage, NavSocial, LanguageSwitch],
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
