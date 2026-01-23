@@ -67,6 +67,7 @@
       "title": "Automatic Translation with Gemini AI",
       "description": "Never manually translate again. Our Gemini integration automatically fills in missing translations while preserving your placeholders and formatting.",
       "aiBadge": "AI-Powered",
+      "aiTranslating": "AI translating...",
       "perks": {
         "automaticTranslations": "Auto-translate missing values with Gemini AI",
         "preservePlaceholders": "Preserves {{placeholders}}, HTML tags, and formatting",
