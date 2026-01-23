@@ -1,14 +1,15 @@
-<section class="flex flex-col gap-16 py-24">
-  <header class="flex flex-col gap-4 text-center">
-    <h2 class="text-2xl font-bold sm:text-4xl xl:text-6xl">Simple to use</h2>
-    <p>Get started with a single command or integrate programmatically</p>
+<section class="flex flex-col gap-12 px-4 py-16 sm:gap-16 sm:px-8 sm:py-20 lg:gap-20 lg:py-24">
+  <header class="flex flex-col gap-3 text-center sm:gap-4">
+    <h2 class="text-2xl font-bold sm:text-3xl lg:text-5xl xl:text-6xl">Simple to use</h2>
+    <p class="text-sm sm:text-base lg:text-lg">Get started with a single command or integrate programmatically</p>
   </header>
-  <div class="flex items-center justify-center gap-32">
-    <!-- interactive cli - menu example	-->
-    <app-code-card>
-      <app-code-card-title>Terminal</app-code-card-title>
-      <app-code-card-body>
-        <pre><code [language]="'zsh'" appHighlightCode>v2.1.0
+  <div class="flex flex-col items-center justify-center gap-8 lg:gap-16 xl:gap-20">
+    <div class="grid w-full grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:gap-12">
+      <!-- interactive cli - menu example	-->
+      <app-code-card>
+        <app-code-card-title>Terminal</app-code-card-title>
+        <app-code-card-body>
+          <pre class="overflow-x-auto"><code [language]="'zsh'" appHighlightCode>v2.1.0
 Convert i18n files to Excel and back
 
 ? Choose an action: (Use arrow keys)
@@ -19,14 +20,16 @@ Convert i18n files to Excel and back
   AI Auto-Translate
   Initialize i18n files
   Exit</code></pre>
-      </app-code-card-body>
-    </app-code-card>
+        </app-code-card-body>
+      </app-code-card>
 
-    <!-- public api - convertToExcel example-->
-    <app-code-card>
-      <app-code-card-title>index.ts</app-code-card-title>
-      <app-code-card-body>
-        <pre><code [language]="'typescript'" appHighlightCode>import &#123; convertToExcel &#125; from 'i18n-excel-manager';
+      <!-- public api - convertToExcel example-->
+      <app-code-card>
+        <app-code-card-title>index.ts</app-code-card-title>
+        <app-code-card-body>
+          <pre
+            class="overflow-x-auto"
+          ><code [language]="'typescript'" appHighlightCode>import &#123; convertToExcel &#125; from 'i18n-excel-manager';
 
 await convertToExcel(
   './public/assets/i18n',
@@ -41,7 +44,8 @@ await convertToExcel(
 );
 
 // Output: ✅ Created translations.xlsx</code></pre>
-      </app-code-card-body>
-    </app-code-card>
+        </app-code-card-body>
+      </app-code-card>
+    </div>
   </div>
 </section>
