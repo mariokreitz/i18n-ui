@@ -7,7 +7,7 @@ import {
   I18N_EXCEL_MANAGER_DEV_EXPERIENCE_FEATURES,
 } from '../../core/constants';
 import { i18nExcelManagerFeature } from '../../core/interfaces';
-import { FeatureCard } from '../../shared/feature-card/feature-card';
+import { FeatureCard } from '../../shared/components/feature-card/feature-card';
 
 @Component({
   selector: 'app-features',
