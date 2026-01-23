@@ -5,5 +5,57 @@
     "newFeature": "Latest integration just arrived",
     "subTitle": "Effortless conversion between i18n JSON files and Excel for Angular and modern web projects.",
     "title": "Revolutionize Your i18n translations with AI"
+  },
+  "features": {
+    "title": "Powerful Features",
+    "description": "Everything you need to manage internationalization in your projects",
+    "coreConversion": {
+      "title": "Core Conversion",
+      "biDirectional": {
+        "title": "Bi-Directional Conversion",
+        "description": "Convert i18n JSON files to Excel and vice versa seamlessly."
+      },
+      "nestedSupport": {
+        "title": "Nested Key Support",
+        "description": "Handles deeply nested translation structures with dot-notation flattening."
+      },
+      "languageMapping": {
+        "title": "Language Mapping",
+        "description": "Use full language names in Excel headers (e.g., 'German' instead of 'de')."
+      },
+      "validation": {
+        "title": "Validation",
+        "description": "Detect inconsistent placeholders and duplicate translation keys."
+      }
+    },
+    "codebaseAnalysis": {
+      "title": "Codebase Analysis",
+      "missingKeyDetection": {
+        "title": "Missing Key Detection",
+        "description": "Find translation keys used in code but missing from JSON files."
+      },
+      "unusedKeyDetection": {
+        "title": "Unused Key Detection",
+        "description": "Identify translation keys defined in JSON but never used in code."
+      }
+    },
+    "aiPowered": {
+      "title": "AI-Powered Translation",
+      "geminiIntegration": {
+        "title": "Gemini Integration",
+        "description": "Auto-translate missing values using Google's Gemini AI models."
+      }
+    },
+    "developerExperience": {
+      "title": "Developer Experience",
+      "interactiveCli": {
+        "title": "Interactive CLI",
+        "description": "User-friendly menu-driven interface for all operations."
+      },
+      "dryRunMode": {
+        "title": "Dry-Run Mode",
+        "description": "Preview changes without writing files. Safe path validation included."
+      }
+    }
   }
 }
