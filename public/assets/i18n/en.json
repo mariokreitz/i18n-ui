@@ -58,6 +58,23 @@
       }
     }
   },
+  "simpleToUse": {
+    "codeSection": {
+      "title": "Simple to use",
+      "description": "Get started with a single command or integrate programmatically"
+    },
+    "aiSection": {
+      "title": "Automatic Translation with Gemini AI",
+      "description": "Never manually translate again. Our Gemini integration automatically fills in missing translations while preserving your placeholders and formatting.",
+      "aiBadge": "AI-Powered",
+      "perks": {
+        "automaticTranslations": "Auto-translate missing values with Gemini AI",
+        "preservePlaceholders": "Preserves {{placeholders}}, HTML tags, and formatting",
+        "chooseModel": "Choose from multiple Gemini models",
+        "batchProcessing": "Batch processing for efficiency"
+      }
+    }
+  },
   "footer": {
     "quickLinks": "Quick Links"
   }
