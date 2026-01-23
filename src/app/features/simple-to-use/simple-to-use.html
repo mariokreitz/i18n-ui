@@ -7,14 +7,26 @@
     <!-- interactive cli - menu example	-->
     <app-code-card>
       <app-code-card-title>Terminal</app-code-card-title>
-      <app-code-card-body></app-code-card-body>
+      <app-code-card-body>
+        <pre><code [language]="'zsh'" appHighlightCode>v2.1.0
+Convert i18n files to Excel and back
+
+? Choose an action: (Use arrow keys)
+						
+❯ Convert i18n files to Excel
+  Convert Excel to i18n files
+  Analyze Codebase
+  AI Auto-Translate
+  Initialize i18n files
+  Exit</code></pre>
+      </app-code-card-body>
     </app-code-card>
 
     <!-- public api - convertToExcel example-->
     <app-code-card>
       <app-code-card-title>index.ts</app-code-card-title>
       <app-code-card-body>
-        <pre><code appHighlightCode>import &#123; convertToExcel &#125; from 'i18n-excel-manager';
+        <pre><code [language]="'typescript'" appHighlightCode>import &#123; convertToExcel &#125; from 'i18n-excel-manager';
 
 await convertToExcel(
   './public/assets/i18n',
