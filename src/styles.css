@@ -1,6 +1,8 @@
 @import 'tailwindcss';
+@import 'highlight.js/styles/atom-one-dark.css';
 @import './styles/fonts.css';
 @import './styles/theme.css';
 @import './styles/base.css';
 @import './styles/utilities.css';
 @import './styles/button.css';
+@import './styles/code-card.css';
