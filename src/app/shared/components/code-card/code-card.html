@@ -1,1 +1,11 @@
-<p>code-card works!</p>
+<article class="code-card">
+  <div class="code-card-title">
+    <div class="flex gap-2">
+      <span class="h-3 w-3 rounded-full bg-red-400"></span>
+      <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+      <span class="h-3 w-3 rounded-full bg-green-400"></span>
+    </div>
+    <ng-content select="app-code-card-title"></ng-content>
+  </div>
+  <ng-content select="app-code-card-body"></ng-content>
+</article>

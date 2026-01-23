@@ -1,0 +1,9 @@
+@layer components {
+  .code-card {
+    @apply bg-i18n-terminal-gray rounded-xl font-mono text-sm shadow-md;
+  }
+
+  .code-card-title {
+    @apply flex items-center gap-6 p-4;
+  }
+}
