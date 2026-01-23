@@ -3,7 +3,7 @@
 </button>
 
 @if (isMenuOpen()) {
-  <ul class="bg-midnight absolute top-16 right-0 z-30 flex flex-col">
+  <ul (appClickOutside)="toggleMenuSelection()" class="bg-midnight absolute top-16 right-0 z-30 flex flex-col">
     @for (lang of languages(); track $index) {
       <li
         [class.bg-i18n-lighter-green]="isCurrentLanguage()(lang)"
