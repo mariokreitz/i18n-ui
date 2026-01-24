@@ -127,5 +127,8 @@
     "es": "Spanish",
     "pt": "Portuguese",
     "tr": "Turkish"
+  },
+  "tostify": {
+    "copySuccess": "Copied to clipboard!"
   }
 }
