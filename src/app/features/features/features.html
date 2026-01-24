@@ -1,10 +1,10 @@
 <section class="flex flex-col gap-16 py-24">
-  <header class="flex flex-col items-center gap-4">
+  <header appFadeIn class="flex flex-col items-center gap-4">
     <h2 class="text-3xl font-bold sm:text-4xl lg:text-5xl xl:text-6xl">{{ 'features.title' | translate }}</h2>
     <p>{{ 'features.description' | translate }}</p>
   </header>
   <!--	Core -->
-  <article class="flex flex-col gap-8">
+  <article appFadeIn class="flex flex-col gap-8">
     <h3 class="flex items-center gap-4"><span class="bg-i18n-blue h-1 w-8"></span>{{ 'features.coreConversion.title' | translate }}</h3>
     <div class="grid grid-cols-1 place-items-center gap-8 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
       @for (feature of coreFeatures; track $index) {
@@ -13,7 +13,7 @@
     </div>
   </article>
   <!--	Code Analysis-->
-  <article class="flex flex-col gap-8">
+  <article appFadeIn class="flex flex-col gap-8">
     <h3 class="flex items-center gap-4"><span class="bg-i18n-blue h-1 w-8"></span>{{ 'features.codebaseAnalysis.title' | translate }}</h3>
     <div class="grid grid-cols-1 place-items-center gap-8 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
       @for (feature of codeAnalysisFeature; track $index) {
@@ -22,7 +22,7 @@
     </div>
   </article>
   <!--	Ai-powered -->
-  <article class="flex flex-col gap-8">
+  <article appFadeIn class="flex flex-col gap-8">
     <h3 class="flex items-center gap-4"><span class="bg-i18n-blue h-1 w-8"></span>{{ 'features.aiPowered.title' | translate }}</h3>
     <div class="grid grid-cols-1 place-items-center gap-8 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
       @for (feature of aiPoweredFeature; track $index) {
@@ -31,7 +31,7 @@
     </div>
   </article>
   <!--	dev exp-->
-  <article class="flex flex-col gap-8">
+  <article appFadeIn class="flex flex-col gap-8">
     <h3 class="flex items-center gap-4">
       <span class="bg-i18n-blue h-1 w-8"></span>{{ 'features.developerExperience.title' | translate }}
     </h3>

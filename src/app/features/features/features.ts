@@ -8,10 +8,11 @@ import {
 } from '../../core/constants';
 import { i18nExcelManagerFeature } from '../../core/interfaces';
 import { FeatureCard } from '../../shared/components/feature-card/feature-card';
+import { FadeInDirective } from '../../shared/directives';
 
 @Component({
   selector: 'app-features',
-  imports: [FeatureCard, TranslatePipe],
+  imports: [FeatureCard, TranslatePipe, FadeInDirective],
   templateUrl: './features.html',
   styleUrl: './features.css',
 })
