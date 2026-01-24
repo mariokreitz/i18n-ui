@@ -11,6 +11,7 @@
       <a [href]="githubProfileUrl" target="_blank"
         >Mario Kreitz
         <fa-icon [icon]="faExt" />
+        <span class="sr-only">{{ 'a11y.opensInNewTab' | translate }}</span>
       </a>
     </p>
   </div>
@@ -22,6 +23,7 @@
           <a [href]="quickLink.url" target="_blank"
             >{{ quickLink.name }}
             <fa-icon [icon]="quickLink.faIcon" />
+            <span class="sr-only">{{ 'a11y.opensInNewTab' | translate }}</span>
           </a>
         </li>
       }
@@ -29,7 +31,11 @@
   </nav>
 
   <p>
-    Open Source • <a [href]="githubLicenseUrl">MIT License</a>
-    <fa-icon [icon]="faExt" class="ml-2" />
+    Open Source •
+    <a [href]="githubLicenseUrl" target="_blank"
+      >MIT License
+      <fa-icon [icon]="faExt" class="ml-2" />
+      <span class="sr-only">{{ 'a11y.opensInNewTab' | translate }}</span></a
+    >
   </p>
 </section>
