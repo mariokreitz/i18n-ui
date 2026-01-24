@@ -1,19 +1,32 @@
-<button (click)="toggleMenuSelection()" class="border-i18n-white/30 rounded-full border px-4 py-2" type="button">
+<button
+  #toggleBtn
+  (click)="toggleMenuSelection()"
+  (keydown)="onToggleKeydown($event)"
+  [attr.aria-expanded]="isMenuOpen()"
+  [attr.aria-label]="'a11y.languageSwitcherLabel' | translate"
+  aria-haspopup="true"
+  class="border-border-highlight hover:bg-bg-surface-active rounded-full border px-4 py-2 transition-all active:scale-95"
+  type="button"
+>
   <fa-icon [icon]="langIcon" class="text-xl" />
 </button>
 
 @if (isMenuOpen()) {
   <ul
-    (appClickOutside)="toggleMenuSelection()"
+    (appClickOutside)="closeMenu()"
+    (keydown)="onMenuKeydown($event)"
     class="bg-bg-page border-border-highlight absolute top-15.5 right-0 z-30 flex flex-col overflow-hidden rounded-b-2xl border shadow-lg"
+    role="menu"
+    tabindex="-1"
   >
     @for (lang of languages(); track $index) {
       <li
         [class.bg-brand-secondary]="isCurrentLanguage()(lang)"
         class="hover:bg-brand-secondary/80 flex cursor-pointer items-center justify-center transition-colors active:scale-95"
         id="lang-{{ lang | lowercase }}"
+        role="none"
       >
-        <button (click)="onSelectLang(lang)" class="h-full w-full px-2 py-1" type="button">
+        <button #langButton (click)="onSelectLang(lang)" class="h-full w-full px-2 py-1 focus:outline-none" role="menuitem" type="button">
           {{ 'languageNames.' + lang | translate }}
         </button>
       </li>
