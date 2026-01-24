@@ -4,34 +4,34 @@
     <p>{{ 'features.description' | translate }}</p>
   </header>
   <!--	Core -->
-  <article appFadeIn class="flex flex-col gap-8">
+  <section appFadeIn class="flex flex-col gap-8">
     <h3 class="flex items-center gap-4"><span class="bg-i18n-blue h-1 w-8"></span>{{ 'features.coreConversion.title' | translate }}</h3>
     <div class="grid grid-cols-1 place-items-center gap-8 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
       @for (feature of coreFeatures; track $index) {
         <app-feature-card [feature]="feature" />
       }
     </div>
-  </article>
+  </section>
   <!--	Code Analysis-->
-  <article appFadeIn class="flex flex-col gap-8">
+  <section appFadeIn class="flex flex-col gap-8">
     <h3 class="flex items-center gap-4"><span class="bg-i18n-blue h-1 w-8"></span>{{ 'features.codebaseAnalysis.title' | translate }}</h3>
     <div class="grid grid-cols-1 place-items-center gap-8 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
       @for (feature of codeAnalysisFeature; track $index) {
         <app-feature-card [feature]="feature" />
       }
     </div>
-  </article>
+  </section>
   <!--	Ai-powered -->
-  <article appFadeIn class="flex flex-col gap-8">
+  <section appFadeIn class="flex flex-col gap-8">
     <h3 class="flex items-center gap-4"><span class="bg-i18n-blue h-1 w-8"></span>{{ 'features.aiPowered.title' | translate }}</h3>
     <div class="grid grid-cols-1 place-items-center gap-8 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
       @for (feature of aiPoweredFeature; track $index) {
         <app-feature-card [feature]="feature" />
       }
     </div>
-  </article>
+  </section>
   <!--	dev exp-->
-  <article appFadeIn class="flex flex-col gap-8">
+  <section appFadeIn class="flex flex-col gap-8">
     <h3 class="flex items-center gap-4">
       <span class="bg-i18n-blue h-1 w-8"></span>{{ 'features.developerExperience.title' | translate }}
     </h3>
@@ -40,5 +40,5 @@
         <app-feature-card [feature]="feature" />
       }
     </div>
-  </article>
+  </section>
 </section>
