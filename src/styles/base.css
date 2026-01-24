@@ -4,13 +4,17 @@
   }
 
   body {
-    @apply bg-midnight text-i18n-white;
+    @apply bg-bg-page text-text-primary;
     font-family: var(--font-family-inter, system-ui, -apple-system, sans-serif), sans-serif;
   }
 
   button,
   a {
     @apply cursor-pointer;
+  }
+
+  :focus-visible {
+    @apply outline-brand-primary outline-2 outline-offset-2;
   }
 
   button:disabled {
