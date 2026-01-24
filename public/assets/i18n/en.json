@@ -81,31 +81,39 @@
   },
   "faq": {
     "title": "FAQ",
-    "description": "Answers to common questions about i18n-Excel-Converter",
+    "description": "Answers to common questions about i18n-Excel-Manager",
     "actions": {
       "expandFirst": "Open first question",
       "collapseAll": "Collapse all"
     },
     "items": {
       "formatsSupported": {
-        "q": "Which formats are supported?",
-        "a": "The tool converts i18n JSON files to Excel and back. It’s designed for modern web projects and works great with Angular-based translation setups."
+        "q": "Which file formats are supported?",
+        "a": "The tool supports converting between i18n JSON files and Excel (XLSX) format. It's optimized for modern web projects and works seamlessly with Angular applications."
       },
       "nestedKeys": {
         "q": "Does it support nested translation keys?",
-        "a": "Yes. Nested objects are flattened into dot-notation for Excel and restored back to the original nested structure when exporting to JSON."
+        "a": "Yes, absolutely. Nested objects are automatically flattened into dot-notation when exporting to Excel (e.g., 'header.title') and restored back to the original nested structure when importing from Excel to JSON."
       },
       "aiTranslation": {
         "q": "How does AI auto-translation work?",
-        "a": "If you enable the AI feature, missing translations can be filled using Gemini models while preserving placeholders and formatting."
+        "a": "The tool integrates with Google's Gemini AI to automatically translate missing values while preserving placeholders like {{name}}, HTML tags, and your original formatting. You can choose which Gemini model to use for translations."
       },
       "dryRun": {
-        "q": "Is there a safe way to preview changes?",
-        "a": "Yes. A dry-run mode lets you preview what would change without writing files, and path validation helps prevent accidental overwrites."
+        "q": "Is there a safe way to preview changes before applying them?",
+        "a": "Yes. The dry-run mode lets you preview all changes without modifying any files. It includes path validation to prevent accidental overwrites and shows you exactly what would be created or modified."
       },
       "angularIntegration": {
-        "q": "How do I use it in an Angular project?",
-        "a": "You can run the CLI in your project to convert files, or integrate programmatically where you manage your i18n assets (e.g., under public/assets/i18n)."
+        "q": "How do I integrate this tool with my Angular project?",
+        "a": "You can use it via the interactive CLI in your project directory, or integrate it programmatically in your build process. The tool works with the standard i18n structure (e.g., public/assets/i18n or src/assets/i18n)."
+      },
+      "geminiApiKey": {
+        "q": "Do I need a Gemini API key for AI auto-translation?",
+        "a": "Yes, you need a Gemini API key to use the AI auto-translation feature. You can obtain a free API key from Google AI Studio at https://makersuite.google.com/app/api-key."
+      },
+      "testedVersions": {
+        "q": "Which versions of Angular and ngx-translate are supported?",
+        "a": "The tool has been tested and works seamlessly with Angular version 20+ and ngx-translate v17+. While it may work with earlier versions, these are the officially tested and supported versions."
       }
     }
   },
