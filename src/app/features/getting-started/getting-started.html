@@ -4,19 +4,35 @@
     <p class="text-sm sm:text-base lg:text-lg">{{ 'gettingStarted.description' | translate }}</p>
   </header>
 
-  <div class="code-card flex w-full max-w-140 items-center justify-between gap-6 overflow-x-auto rounded-2xl px-2 py-2 sm:px-5 sm:py-3">
-    <p class="text-xs font-medium whitespace-nowrap sm:text-sm md:text-base">{{ installCommand }}</p>
-    <button
-      (click)="copyToClipboard()"
-      [disabled]="isCopySuccess()"
-      class="focus-visible:ring-i18n-light-blue focus-visible:ring-offset-midnight disabled:text-i18n-lighter-blue/60 flex h-11 w-11 items-center justify-center text-base transition-colors duration-200 ease-in-out focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
-      type="button"
-    >
-      @if (!isCopySuccess()) {
-        <fa-icon [icon]="copyIcon" />
-      } @else {
-        <fa-icon [icon]="successIcon" class="text-i18n-light-green" />
+  <article class="flex w-full max-w-140 flex-col gap-4">
+    <div class="flex gap-2">
+      @for (manager of pkgManager; track manager) {
+        <button
+          (click)="selectPackageManager(manager)"
+          [class.bg-i18n-lighter-green!]="selectedPkgManager() === manager"
+          [class.text-i18n-green]="selectedPkgManager() === manager"
+          class="bg-i18n-lighter-blue/10 hover:bg-i18n-lighter-blue/20 focus-visible:ring-i18n-light-blue focus-visible:ring-offset-midnight rounded-lg px-4 py-2 text-sm font-medium transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
+          type="button"
+        >
+          {{ manager }}
+        </button>
       }
-    </button>
-  </div>
+    </div>
+
+    <div class="code-card flex w-full items-center justify-between gap-6 overflow-x-auto rounded-2xl px-2 py-2 sm:px-5 sm:py-3">
+      <p class="text-xs font-medium whitespace-nowrap sm:text-sm md:text-base">{{ currentInstallCommand() }}</p>
+      <button
+        (click)="copyToClipboard()"
+        [disabled]="isCopySuccess()"
+        class="focus-visible:ring-i18n-light-blue focus-visible:ring-offset-midnight disabled:text-i18n-lighter-blue/60 flex h-11 w-11 items-center justify-center text-base transition-colors duration-200 ease-in-out focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
+        type="button"
+      >
+        @if (!isCopySuccess()) {
+          <fa-icon [icon]="copyIcon" />
+        } @else {
+          <fa-icon [icon]="successIcon" class="text-i18n-light-green" />
+        }
+      </button>
+    </div>
+  </article>
 </section>
