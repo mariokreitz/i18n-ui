@@ -24,7 +24,10 @@ export class FadeInDirective implements OnInit, OnDestroy {
   }
 
   private createObserver(): void {
-    if (typeof IntersectionObserver === 'undefined') {
+    if (
+      typeof IntersectionObserver === 'undefined' ||
+      (typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches)
+    ) {
       this.revealOnly();
       return;
     }
