@@ -130,5 +130,14 @@
   },
   "tostify": {
     "copySuccess": "Copied to clipboard!"
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "languageSwitcherLabel": "Select a language",
+    "codeRegionLabel": "Code example in {{lang}}",
+    "socialLink": "Visit our {{platform}} page",
+    "scrollDown": "Scroll down to content",
+    "copyCommand": "Copy installation command to clipboard",
+    "opensInNewTab": "(opens in a new tab)"
   }
 }
