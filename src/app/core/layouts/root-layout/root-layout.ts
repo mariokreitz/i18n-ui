@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 import { ToastComponent } from '../../../shared/components/toast/toast';
 import { Footer } from '../../components/footer/footer';
 import { Header } from '../../components/header/header';
 
 @Component({
   selector: 'app-root-layout',
-  imports: [Header, Footer, ToastComponent],
+  imports: [Header, Footer, ToastComponent, TranslatePipe],
   templateUrl: './root-layout.html',
   styleUrl: './root-layout.css',
   host: { class: 'min-h-screen flex flex-col' },
