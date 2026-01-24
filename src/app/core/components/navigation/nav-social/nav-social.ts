@@ -1,12 +1,13 @@
 import { LowerCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
-import { SOCIAL_MEDIA_LINKS } from '../../../constants/social-media-links.constant';
+import { TranslatePipe } from '@ngx-translate/core';
+import { SOCIAL_MEDIA_LINKS } from '../../../constants';
 import { SocialMediaLink } from '../../../interfaces';
 
 @Component({
   selector: 'app-nav-social',
-  imports: [FaIconComponent, LowerCasePipe],
+  imports: [FaIconComponent, LowerCasePipe, TranslatePipe],
   templateUrl: './nav-social.html',
   styleUrl: './nav-social.css',
 })
