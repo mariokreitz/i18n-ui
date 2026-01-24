@@ -26,4 +26,14 @@ export const FAQ_ITEMS: readonly FaqItem[] = [
     questionKey: 'faq.items.angularIntegration.q',
     answerKey: 'faq.items.angularIntegration.a',
   },
+  {
+    id: 'gemini-api-key',
+    questionKey: 'faq.items.geminiApiKey.q',
+    answerKey: 'faq.items.geminiApiKey.a',
+  },
+  {
+    id: 'tested-versions',
+    questionKey: 'faq.items.testedVersions.q',
+    answerKey: 'faq.items.testedVersions.a',
+  },
 ];
