@@ -1,15 +1,15 @@
 <section class="flex flex-col gap-12 py-24 sm:gap-16">
-  <header class="flex flex-col items-center gap-4 text-center">
+  <header appFadeIn class="flex flex-col items-center gap-4 text-center">
     <h2 class="text-3xl font-bold sm:text-4xl lg:text-5xl xl:text-6xl">{{ 'faq.title' | translate }}</h2>
-    <p class="text-i18n-white/80 max-w-2xl">{{ 'faq.description' | translate }}</p>
+    <p class="text-text-secondary max-w-2xl">{{ 'faq.description' | translate }}</p>
   </header>
 
   <div class="mx-auto w-full max-w-5xl">
     <dl class="grid grid-cols-1 gap-6 lg:grid-cols-2">
       @for (item of faqItems; track item.id) {
-        <div class="border-i18n-lighter-blue/30 bg-midnight/50 rounded-xl border p-5 backdrop-blur-sm sm:p-6">
-          <dt class="text-i18n-white text-base font-semibold sm:text-lg">{{ item.questionKey | translate }}</dt>
-          <dd class="text-i18n-white/80 mt-3 leading-relaxed">{{ item.answerKey | translate }}</dd>
+        <div appFadeIn class="border-border-subtle bg-bg-surface backdrop-blur-glass rounded-xl border p-5 sm:p-6">
+          <dt class="text-text-primary text-base font-semibold sm:text-lg">{{ item.questionKey | translate }}</dt>
+          <dd class="text-text-secondary mt-3 leading-relaxed">{{ item.answerKey | translate }}</dd>
         </div>
       }
     </dl>
