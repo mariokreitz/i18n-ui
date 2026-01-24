@@ -1,17 +1,17 @@
 <div
-  class="border-i18n-lighter-blue/30 bg-midnight/50 hover:border-i18n-blue/60 hover:bg-midnight/70 focus-within:border-i18n-blue flex flex-col gap-4 rounded-lg border p-6 backdrop-blur-sm transition-all duration-200 focus-within:shadow-lg hover:shadow-lg"
+  class="border-border-subtle bg-bg-surface hover:border-border-highlight hover:bg-bg-surface-active focus-within:border-i18n-blue backdrop-blur-glass flex flex-col gap-4 rounded-lg border p-6 transition-all duration-300 focus-within:shadow-lg hover:-translate-y-1 hover:shadow-lg"
 >
   <figure class="flex justify-center">
-    <fa-icon [icon]="feature().icon" class="text-i18n-white text-4xl" />
+    <fa-icon [icon]="feature().icon" class="text-text-primary text-4xl" />
   </figure>
 
   <header>
-    <h3 class="text-i18n-white text-center text-lg font-semibold">
+    <h3 class="text-text-primary text-center text-lg font-semibold">
       {{ feature().title | translate }}
     </h3>
   </header>
 
-  <p class="text-i18n-white/80 text-center text-sm leading-relaxed">
+  <p class="text-text-secondary text-center text-sm leading-relaxed">
     {{ feature().description | translate }}
   </p>
 </div>
