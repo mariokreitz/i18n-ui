@@ -50,7 +50,7 @@ export class GettingStarted {
 
   public async copyToClipboard(): Promise<void> {
     await copyTextToClipboard(this.currentInstallCommand());
-    this.toastService.show('Command copied to clipboard!', 'success');
+    this.toastService.show('tostify.copySuccess', 'success');
     this._isCopySuccess.set(true);
     setTimeout(() => {
       this._isCopySuccess.set(false);
