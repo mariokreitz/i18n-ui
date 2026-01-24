@@ -1,4 +1,4 @@
-import { Component, Signal, signal, WritableSignal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Signal, signal, WritableSignal } from '@angular/core';
 import { FaIconComponent, IconDefinition } from '@fortawesome/angular-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-regular-svg-icons/faCircleCheck';
 import { faCopy } from '@fortawesome/free-regular-svg-icons/faCopy';
@@ -11,6 +11,7 @@ import { copyTextToClipboard } from '../../shared/utils';
   imports: [TranslatePipe, FaIconComponent],
   templateUrl: './getting-started.html',
   styleUrl: './getting-started.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class GettingStarted {
   public readonly copyIcon: IconDefinition = faCopy;
