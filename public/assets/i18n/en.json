@@ -82,7 +82,33 @@
   },
   "faq": {
     "title": "FAQ",
-    "description": "Answers to common questions about i18n-Excel-Converter"
+    "description": "Answers to common questions about i18n-Excel-Converter",
+    "actions": {
+      "expandFirst": "Open first question",
+      "collapseAll": "Collapse all"
+    },
+    "items": {
+      "formatsSupported": {
+        "q": "Which formats are supported?",
+        "a": "The tool converts i18n JSON files to Excel and back. It’s designed for modern web projects and works great with Angular-based translation setups."
+      },
+      "nestedKeys": {
+        "q": "Does it support nested translation keys?",
+        "a": "Yes. Nested objects are flattened into dot-notation for Excel and restored back to the original nested structure when exporting to JSON."
+      },
+      "aiTranslation": {
+        "q": "How does AI auto-translation work?",
+        "a": "If you enable the AI feature, missing translations can be filled using Gemini models while preserving placeholders and formatting."
+      },
+      "dryRun": {
+        "q": "Is there a safe way to preview changes?",
+        "a": "Yes. A dry-run mode lets you preview what would change without writing files, and path validation helps prevent accidental overwrites."
+      },
+      "angularIntegration": {
+        "q": "How do I use it in an Angular project?",
+        "a": "You can run the CLI in your project to convert files, or integrate programmatically where you manage your i18n assets (e.g., under public/assets/i18n)."
+      }
+    }
   },
   "footer": {
     "quickLinks": "Quick Links"
