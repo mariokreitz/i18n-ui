@@ -27,7 +27,10 @@
         <app-code-card-title>index.ts</app-code-card-title>
         <app-code-card-body>
           <pre
-            class="overflow-x-auto"
+            [attr.aria-label]="'a11y.codeRegionLabel' | translate: { lang: 'TypeScript' }"
+            class="overflow-x-auto focus:outline-none"
+            role="region"
+            tabindex="0"
           ><code [language]="'typescript'" appHighlightCode>import &#123; convertToExcel &#125; from 'i18n-excel-manager';
 
 await convertToExcel(
