@@ -1,4 +1,4 @@
-import { DOCUMENT, LowerCasePipe } from '@angular/common';
+import { DOCUMENT } from '@angular/common';
 import { Component, computed, ElementRef, inject, Signal, signal, viewChild, viewChildren, WritableSignal } from '@angular/core';
 import { FaIconComponent, IconDefinition } from '@fortawesome/angular-fontawesome';
 import { faLanguage } from '@fortawesome/free-solid-svg-icons/faLanguage';
@@ -7,16 +7,12 @@ import { ClickOutsideDirective } from '../../../shared/directives';
 
 @Component({
   selector: 'app-language-switch',
-  imports: [FaIconComponent, LowerCasePipe, TranslatePipe, ClickOutsideDirective],
+  imports: [FaIconComponent, TranslatePipe, ClickOutsideDirective],
   templateUrl: './language-switch.html',
   styleUrl: './language-switch.css',
 })
 export class LanguageSwitch {
   public readonly langIcon: IconDefinition = faLanguage;
-  public isCurrentLanguage = computed<(lang: Language) => boolean>(() => {
-    const current: string | null = this.currentLanguage();
-    return (lang: Language) => lang === current;
-  });
   private readonly toggleBtn: Signal<ElementRef<HTMLButtonElement>> = viewChild.required<ElementRef<HTMLButtonElement>>('toggleBtn');
   private readonly langButtons: Signal<readonly ElementRef<HTMLButtonElement>[]> =
     viewChildren<ElementRef<HTMLButtonElement>>('langButton');
@@ -26,6 +22,10 @@ export class LanguageSwitch {
   public readonly isMenuOpen: Signal<boolean> = this._isMenuOpen.asReadonly();
   private readonly _currentLanguage: WritableSignal<Language | null> = signal<Language | null>(null);
   public readonly currentLanguage: Signal<Language | null> = this._currentLanguage.asReadonly();
+  public isCurrentLanguage = computed<(lang: Language) => boolean>(() => {
+    const current: string | null = this.currentLanguage();
+    return (lang: Language) => lang === current;
+  });
   private focusedIndex = -1;
   private readonly translate: TranslateService = inject(TranslateService);
   private readonly document: Document = inject(DOCUMENT);
