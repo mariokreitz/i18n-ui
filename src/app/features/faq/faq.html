@@ -4,8 +4,8 @@
     <p class="text-i18n-white/80 max-w-2xl">{{ 'faq.description' | translate }}</p>
   </header>
 
-  <div class="mx-auto w-full max-w-3xl">
-    <dl class="flex flex-col gap-6">
+  <div class="mx-auto w-full max-w-5xl">
+    <dl class="grid grid-cols-1 gap-6 lg:grid-cols-2">
       @for (item of faqItems; track item.id) {
         <div class="border-i18n-lighter-blue/30 bg-midnight/50 rounded-xl border p-5 backdrop-blur-sm sm:p-6">
           <dt class="text-i18n-white text-base font-semibold sm:text-lg">{{ item.questionKey | translate }}</dt>
