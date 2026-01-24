@@ -1,4 +1,8 @@
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-midnight text-i18n-white;
     font-family: var(--font-family-inter, system-ui, -apple-system, sans-serif), sans-serif;
