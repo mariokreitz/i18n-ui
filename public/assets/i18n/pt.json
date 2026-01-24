@@ -1,1 +1,146 @@
-{}
+{
+  "a11y": {
+    "codeRegionLabel": "Exemplo de código em {{lang}}",
+    "copyCommand": "Copiar comando de instalação para a área de transferência",
+    "languageSwitcherLabel": "Selecionar um idioma",
+    "opensInNewTab": "(abre em uma nova aba)",
+    "reloadPage": "Recarregar página",
+    "scrollDown": "Rolar para baixo até o conteúdo",
+    "scrollToTop": "Rolar para o topo",
+    "skipToContent": "Pular para o conteúdo",
+    "socialLink": "Visite nossa página no {{platform}}",
+    "socialNav": "Links de Redes Sociais"
+  },
+  "faq": {
+    "actions": {
+      "collapseAll": "Recolher tudo",
+      "expandFirst": "Abrir primeira pergunta"
+    },
+    "description": "Respostas para perguntas comuns sobre o i18n-Excel-Manager",
+    "items": {
+      "aiTranslation": {
+        "a": "A ferramenta integra-se com a IA Gemini do Google para traduzir automaticamente valores ausentes, preservando placeholders como {{name}}, tags HTML e sua formatação original. Você pode escolher qual modelo Gemini usar para as traduções.",
+        "q": "Como funciona a tradução automática por IA?"
+      },
+      "angularIntegration": {
+        "a": "Você pode usá-lo através da CLI interativa no diretório do seu projeto, ou integrá-lo programaticamente em seu processo de build. A ferramenta funciona com a estrutura i18n padrão (por exemplo, public/assets/i18n ou src/assets/i18n).",
+        "q": "Como integro esta ferramenta ao meu projeto Angular?"
+      },
+      "dryRun": {
+        "a": "Sim. O modo dry-run permite que você visualize todas as alterações sem modificar nenhum arquivo. Ele inclui validação de caminho para evitar sobrescritas acidentais e mostra exatamente o que seria criado ou modificado.",
+        "q": "Existe uma maneira segura de visualizar as alterações antes de aplicá-las?"
+      },
+      "formatsSupported": {
+        "a": "A ferramenta suporta a conversão entre arquivos JSON i18n e o formato Excel (XLSX). É otimizada para projetos web modernos e funciona perfeitamente com aplicações Angular.",
+        "q": "Quais formatos de arquivo são suportados?"
+      },
+      "geminiApiKey": {
+        "a": "Sim, você precisa de uma chave de API Gemini para usar o recurso de tradução automática por IA. Você pode obter uma chave de API gratuita no Google AI Studio em https://makersuite.google.com/app/api-key.",
+        "q": "Preciso de uma chave de API Gemini para a tradução automática por IA?"
+      },
+      "nestedKeys": {
+        "a": "Sim, absolutamente. Objetos aninhados são automaticamente nivelados para notação de ponto ao exportar para o Excel (por exemplo, 'header.title') e restaurados de volta à estrutura aninhada original ao importar do Excel para JSON.",
+        "q": "Ele suporta chaves de tradução aninhadas?"
+      },
+      "testedVersions": {
+        "a": "A ferramenta foi testada e funciona perfeitamente com Angular versão 20+ e ngx-translate v17+. Embora possa funcionar com versões anteriores, estas são as versões oficialmente testadas e suportadas.",
+        "q": "Quais versões do Angular e ngx-translate são suportadas?"
+      }
+    },
+    "title": "FAQ"
+  },
+  "features": {
+    "aiPowered": {
+      "geminiIntegration": {
+        "description": "Traduzir automaticamente valores ausentes usando os modelos Gemini AI do Google.",
+        "title": "Integração Gemini"
+      },
+      "title": "Tradução com IA"
+    },
+    "codebaseAnalysis": {
+      "missingKeyDetection": {
+        "description": "Encontre chaves de tradução usadas no código, mas ausentes nos arquivos JSON.",
+        "title": "Detecção de Chaves Ausentes"
+      },
+      "title": "Análise de Código",
+      "unusedKeyDetection": {
+        "description": "Identifique chaves de tradução definidas em JSON, mas nunca usadas no código.",
+        "title": "Detecção de Chaves Não Utilizadas"
+      }
+    },
+    "coreConversion": {
+      "biDirectional": {
+        "description": "Converta arquivos JSON i18n para Excel e vice-versa sem problemas.",
+        "title": "Conversão Bidirecional"
+      },
+      "languageMapping": {
+        "description": "Use nomes de idiomas completos nos cabeçalhos do Excel (por exemplo, 'Alemão' em vez de 'de').",
+        "title": "Mapeamento de Idiomas"
+      },
+      "nestedSupport": {
+        "description": "Lida com estruturas de tradução profundamente aninhadas com nivelamento de notação de ponto.",
+        "title": "Suporte a Chaves Aninhadas"
+      },
+      "title": "Conversão Principal",
+      "validation": {
+        "description": "Detecte placeholders inconsistentes e chaves de tradução duplicadas.",
+        "title": "Validação"
+      }
+    },
+    "description": "Tudo o que você precisa para gerenciar a internacionalização em seus projetos",
+    "developerExperience": {
+      "dryRunMode": {
+        "description": "Visualize as alterações sem gravar arquivos. Validação de caminho segura incluída.",
+        "title": "Modo Dry-Run"
+      },
+      "interactiveCli": {
+        "description": "Interface amigável orientada por menu para todas as operações.",
+        "title": "CLI Interativa"
+      },
+      "title": "Experiência do Desenvolvedor"
+    },
+    "title": "com recursos poderosos"
+  },
+  "footer": {
+    "quickLinks": "Links Rápidos"
+  },
+  "gettingStarted": {
+    "description": "Instale via npm e execute um único comando para converter seus arquivos JSON i18n para Excel ou vice-versa.",
+    "title": "Comece em segundos"
+  },
+  "hero": {
+    "newBadge": "novo",
+    "newFeature": "A mais recente integração acaba de chegar",
+    "subTitle": "Conversão sem esforço entre arquivos JSON i18n e Excel para Angular e projetos web modernos.",
+    "title": "Revolucione suas traduções i18n com IA"
+  },
+  "languageNames": {
+    "de": "Alemão",
+    "en": "Inglês",
+    "es": "Espanhol",
+    "fr": "Francês",
+    "pt": "Português",
+    "tr": "Turco"
+  },
+  "simpleToUse": {
+    "aiSection": {
+      "aiBadge": "Com IA",
+      "aiTranslating": "IA traduzindo...",
+      "description": "Nunca mais traduza manualmente. Nossa integração Gemini preenche automaticamente as traduções ausentes, preservando seus placeholders e formatação.",
+      "perks": {
+        "automaticTranslations": "Tradução automática de valores ausentes com Gemini AI",
+        "batchProcessing": "Processamento em lote para eficiência",
+        "chooseModel": "Escolha entre vários modelos Gemini",
+        "preservePlaceholders": "Preserva {{placeholders}}, tags HTML e formatação"
+      },
+      "title": "Tradução Automática com Gemini AI"
+    },
+    "codeSection": {
+      "description": "Comece com um único comando ou integre programaticamente",
+      "title": "e simples de usar"
+    }
+  },
+  "tostify": {
+    "copySuccess": "Copiado para a área de transferência!"
+  }
+}

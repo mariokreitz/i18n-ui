@@ -1,1 +1,146 @@
-{}
+{
+  "a11y": {
+    "codeRegionLabel": "{{lang}} dilinde kod örneği",
+    "copyCommand": "Kurulum komutunu panoya kopyala",
+    "languageSwitcherLabel": "Bir dil seçin",
+    "opensInNewTab": "(yeni sekmede açılır)",
+    "reloadPage": "Sayfayı yeniden yükle",
+    "scrollDown": "İçeriğe aşağı kaydır",
+    "scrollToTop": "Yukarı kaydır",
+    "skipToContent": "İçeriğe atla",
+    "socialLink": "{{platform}} sayfamızı ziyaret edin",
+    "socialNav": "Sosyal Medya Bağlantıları"
+  },
+  "faq": {
+    "actions": {
+      "collapseAll": "Tümünü daralt",
+      "expandFirst": "İlk soruyu aç"
+    },
+    "description": "i18n-Excel-Manager hakkında sıkça sorulan soruların yanıtları",
+    "items": {
+      "aiTranslation": {
+        "a": "Araç, eksik değerleri otomatik olarak çevirmek için Google'ın Gemini yapay zekasıyla entegre olurken, {{name}} gibi yer tutucuları, HTML etiketlerini ve orijinal biçimlendirmenizi korur. Çeviriler için hangi Gemini modelini kullanacağınızı seçebilirsiniz.",
+        "q": "Yapay zeka otomatik çeviri nasıl çalışır?"
+      },
+      "angularIntegration": {
+        "a": "Proje dizininizdeki etkileşimli CLI aracılığıyla kullanabilir veya derleme sürecinize programatik olarak entegre edebilirsiniz. Araç, standart i18n yapısıyla (örn. public/assets/i18n veya src/assets/i18n) çalışır.",
+        "q": "Bu aracı Angular projemle nasıl entegre ederim?"
+      },
+      "dryRun": {
+        "a": "Evet. Deneme modu, herhangi bir dosyayı değiştirmeden tüm değişiklikleri önizlemenizi sağlar. Yanlışlıkla üzerine yazmayı önlemek için yol doğrulamasını içerir ve neyin oluşturulacağını veya değiştirileceğini size tam olarak gösterir.",
+        "q": "Değişiklikleri uygulamadan önce önizlemenin güvenli bir yolu var mı?"
+      },
+      "formatsSupported": {
+        "a": "Araç, i18n JSON dosyaları ile Excel (XLSX) formatı arasında dönüştürmeyi destekler. Modern web projeleri için optimize edilmiştir ve Angular uygulamalarıyla sorunsuz çalışır.",
+        "q": "Hangi dosya formatları destekleniyor?"
+      },
+      "geminiApiKey": {
+        "a": "Evet, yapay zeka otomatik çeviri özelliğini kullanmak için bir Gemini API anahtarına ihtiyacınız var. Ücretsiz bir API anahtarını Google AI Studio'dan https://makersuite.google.com/app/api-key adresinden edinebilirsiniz.",
+        "q": "Yapay zeka otomatik çeviri için Gemini API anahtarına ihtiyacım var mı?"
+      },
+      "nestedKeys": {
+        "a": "Evet, kesinlikle. İç içe nesneler Excel'e aktarılırken otomatik olarak nokta gösterimine (örn. 'header.title') düzleştirilir ve Excel'den JSON'a aktarılırken orijinal iç içe yapıya geri yüklenir.",
+        "q": "İç içe çeviri anahtarlarını destekliyor mu?"
+      },
+      "testedVersions": {
+        "a": "Araç, Angular sürüm 20+ ve ngx-translate v17+ ile test edilmiş ve sorunsuz çalışmaktadır. Daha önceki sürümlerle çalışabilse de, bunlar resmi olarak test edilmiş ve desteklenen sürümlerdir.",
+        "q": "Angular ve ngx-translate'in hangi sürümleri destekleniyor?"
+      }
+    },
+    "title": "SSS"
+  },
+  "features": {
+    "aiPowered": {
+      "geminiIntegration": {
+        "description": "Google'ın Gemini yapay zeka modellerini kullanarak eksik değerleri otomatik çevir.",
+        "title": "Gemini Entegrasyonu"
+      },
+      "title": "Yapay Zeka Destekli Çeviri"
+    },
+    "codebaseAnalysis": {
+      "missingKeyDetection": {
+        "description": "Koddaki kullanılan ancak JSON dosyalarında eksik olan çeviri anahtarlarını bul.",
+        "title": "Eksik Anahtar Tespiti"
+      },
+      "title": "Kod Tabanı Analizi",
+      "unusedKeyDetection": {
+        "description": "JSON'da tanımlanmış ancak kodda hiç kullanılmamış çeviri anahtarlarını belirle.",
+        "title": "Kullanılmayan Anahtar Tespiti"
+      }
+    },
+    "coreConversion": {
+      "biDirectional": {
+        "description": "i18n JSON dosyalarını Excel'e ve tersine sorunsuz bir şekilde dönüştür.",
+        "title": "Çift Yönlü Dönüşüm"
+      },
+      "languageMapping": {
+        "description": "Excel başlıklarında tam dil adlarını kullanın (örn. 'Almanca' yerine 'de').",
+        "title": "Dil Eşleştirme"
+      },
+      "nestedSupport": {
+        "description": "Nokta gösterimi düzleştirmesiyle derinlemesine iç içe çeviri yapılarını yönetir.",
+        "title": "İç İçe Anahtar Desteği"
+      },
+      "title": "Temel Dönüşüm",
+      "validation": {
+        "description": "Tutarsız yer tutucuları ve yinelenen çeviri anahtarlarını tespit et.",
+        "title": "Doğrulama"
+      }
+    },
+    "description": "Projelerinizde uluslararasılaştırmayı yönetmek için ihtiyacınız olan her şey",
+    "developerExperience": {
+      "dryRunMode": {
+        "description": "Dosyaları yazmadan değişiklikleri önizleyin. Güvenli yol doğrulaması dahildir.",
+        "title": "Deneme Modu"
+      },
+      "interactiveCli": {
+        "description": "Tüm işlemler için kullanıcı dostu menü tabanlı arayüz.",
+        "title": "Etkileşimli CLI"
+      },
+      "title": "Geliştirici Deneyimi"
+    },
+    "title": "güçlü özelliklerle"
+  },
+  "footer": {
+    "quickLinks": "Hızlı Bağlantılar"
+  },
+  "gettingStarted": {
+    "description": "npm aracılığıyla yükleyin ve i18n JSON dosyalarınızı Excel'e veya tersine dönüştürmek için tek bir komut çalıştırın.",
+    "title": "Saniyeler içinde başlayın"
+  },
+  "hero": {
+    "newBadge": "yeni",
+    "newFeature": "En son entegrasyon yeni geldi",
+    "subTitle": "Angular ve modern web projeleri için i18n JSON dosyaları ile Excel arasında zahmetsiz dönüşüm.",
+    "title": "Yapay Zeka ile i18n çevirilerinizi devrimleştirin"
+  },
+  "languageNames": {
+    "de": "Almanca",
+    "en": "İngilizce",
+    "es": "İspanyolca",
+    "fr": "Fransızca",
+    "pt": "Portekizce",
+    "tr": "Türkçe"
+  },
+  "simpleToUse": {
+    "aiSection": {
+      "aiBadge": "Yapay Zeka Destekli",
+      "aiTranslating": "Yapay zeka çeviriyor...",
+      "description": "Bir daha asla manuel çeviri yapmayın. Gemini entegrasyonumuz, yer tutucularınızı ve biçimlendirmenizi koruyarak eksik çevirileri otomatik olarak doldurur.",
+      "perks": {
+        "automaticTranslations": "Gemini yapay zekasıyla eksik değerleri otomatik çevir",
+        "batchProcessing": "Verimlilik için toplu işleme",
+        "chooseModel": "Birden fazla Gemini modelinden seçim yapın",
+        "preservePlaceholders": "{{placeholders}}, HTML etiketlerini ve biçimlendirmeyi korur"
+      },
+      "title": "Gemini Yapay Zekası ile Otomatik Çeviri"
+    },
+    "codeSection": {
+      "description": "Tek bir komutla başlayın veya programatik olarak entegre edin",
+      "title": "ve kullanımı kolay"
+    }
+  },
+  "tostify": {
+    "copySuccess": "Panoya kopyalandı!"
+  }
+}

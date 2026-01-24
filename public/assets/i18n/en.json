@@ -1,146 +1,146 @@
 {
+  "a11y": {
+    "codeRegionLabel": "Code example in {{lang}}",
+    "copyCommand": "Copy installation command to clipboard",
+    "languageSwitcherLabel": "Select a language",
+    "opensInNewTab": "(opens in a new tab)",
+    "reloadPage": "Reload page",
+    "scrollDown": "Scroll down to content",
+    "scrollToTop": "Scroll to top",
+    "skipToContent": "Skip to content",
+    "socialLink": "Visit our {{platform}} page",
+    "socialNav": "Social Media Links"
+  },
+  "faq": {
+    "actions": {
+      "collapseAll": "Collapse all",
+      "expandFirst": "Open first question"
+    },
+    "description": "Answers to common questions about i18n-Excel-Manager",
+    "items": {
+      "aiTranslation": {
+        "a": "The tool integrates with Google's Gemini AI to automatically translate missing values while preserving placeholders like {{name}}, HTML tags, and your original formatting. You can choose which Gemini model to use for translations.",
+        "q": "How does AI auto-translation work?"
+      },
+      "angularIntegration": {
+        "a": "You can use it via the interactive CLI in your project directory, or integrate it programmatically in your build process. The tool works with the standard i18n structure (e.g., public/assets/i18n or src/assets/i18n).",
+        "q": "How do I integrate this tool with my Angular project?"
+      },
+      "dryRun": {
+        "a": "Yes. The dry-run mode lets you preview all changes without modifying any files. It includes path validation to prevent accidental overwrites and shows you exactly what would be created or modified.",
+        "q": "Is there a safe way to preview changes before applying them?"
+      },
+      "formatsSupported": {
+        "a": "The tool supports converting between i18n JSON files and Excel (XLSX) format. It's optimized for modern web projects and works seamlessly with Angular applications.",
+        "q": "Which file formats are supported?"
+      },
+      "geminiApiKey": {
+        "a": "Yes, you need a Gemini API key to use the AI auto-translation feature. You can obtain a free API key from Google AI Studio at https://makersuite.google.com/app/api-key.",
+        "q": "Do I need a Gemini API key for AI auto-translation?"
+      },
+      "nestedKeys": {
+        "a": "Yes, absolutely. Nested objects are automatically flattened into dot-notation when exporting to Excel (e.g., 'header.title') and restored back to the original nested structure when importing from Excel to JSON.",
+        "q": "Does it support nested translation keys?"
+      },
+      "testedVersions": {
+        "a": "The tool has been tested and works seamlessly with Angular version 20+ and ngx-translate v17+. While it may work with earlier versions, these are the officially tested and supported versions.",
+        "q": "Which versions of Angular and ngx-translate are supported?"
+      }
+    },
+    "title": "FAQ"
+  },
+  "features": {
+    "aiPowered": {
+      "geminiIntegration": {
+        "description": "Auto-translate missing values using Google's Gemini AI models.",
+        "title": "Gemini Integration"
+      },
+      "title": "AI-Powered Translation"
+    },
+    "codebaseAnalysis": {
+      "missingKeyDetection": {
+        "description": "Find translation keys used in code but missing from JSON files.",
+        "title": "Missing Key Detection"
+      },
+      "title": "Codebase Analysis",
+      "unusedKeyDetection": {
+        "description": "Identify translation keys defined in JSON but never used in code.",
+        "title": "Unused Key Detection"
+      }
+    },
+    "coreConversion": {
+      "biDirectional": {
+        "description": "Convert i18n JSON files to Excel and vice versa seamlessly.",
+        "title": "Bi-Directional Conversion"
+      },
+      "languageMapping": {
+        "description": "Use full language names in Excel headers (e.g., 'German' instead of 'de').",
+        "title": "Language Mapping"
+      },
+      "nestedSupport": {
+        "description": "Handles deeply nested translation structures with dot-notation flattening.",
+        "title": "Nested Key Support"
+      },
+      "title": "Core Conversion",
+      "validation": {
+        "description": "Detect inconsistent placeholders and duplicate translation keys.",
+        "title": "Validation"
+      }
+    },
+    "description": "Everything you need to manage internationalization in your projects",
+    "developerExperience": {
+      "dryRunMode": {
+        "description": "Preview changes without writing files. Safe path validation included.",
+        "title": "Dry-Run Mode"
+      },
+      "interactiveCli": {
+        "description": "User-friendly menu-driven interface for all operations.",
+        "title": "Interactive CLI"
+      },
+      "title": "Developer Experience"
+    },
+    "title": "with powerful features"
+  },
+  "footer": {
+    "quickLinks": "Quick Links"
+  },
+  "gettingStarted": {
+    "description": "Install via npm and run a single command to convert your i18n JSON files to Excel or vice versa.",
+    "title": "Get started in seconds"
+  },
   "hero": {
     "newBadge": "new",
     "newFeature": "Latest integration just arrived",
     "subTitle": "Effortless conversion between i18n JSON files and Excel for Angular and modern web projects.",
     "title": "Revolutionize Your i18n translations with AI"
   },
-  "features": {
-    "title": "with powerful features",
-    "description": "Everything you need to manage internationalization in your projects",
-    "coreConversion": {
-      "title": "Core Conversion",
-      "biDirectional": {
-        "title": "Bi-Directional Conversion",
-        "description": "Convert i18n JSON files to Excel and vice versa seamlessly."
-      },
-      "nestedSupport": {
-        "title": "Nested Key Support",
-        "description": "Handles deeply nested translation structures with dot-notation flattening."
-      },
-      "languageMapping": {
-        "title": "Language Mapping",
-        "description": "Use full language names in Excel headers (e.g., 'German' instead of 'de')."
-      },
-      "validation": {
-        "title": "Validation",
-        "description": "Detect inconsistent placeholders and duplicate translation keys."
-      }
-    },
-    "codebaseAnalysis": {
-      "title": "Codebase Analysis",
-      "missingKeyDetection": {
-        "title": "Missing Key Detection",
-        "description": "Find translation keys used in code but missing from JSON files."
-      },
-      "unusedKeyDetection": {
-        "title": "Unused Key Detection",
-        "description": "Identify translation keys defined in JSON but never used in code."
-      }
-    },
-    "aiPowered": {
-      "title": "AI-Powered Translation",
-      "geminiIntegration": {
-        "title": "Gemini Integration",
-        "description": "Auto-translate missing values using Google's Gemini AI models."
-      }
-    },
-    "developerExperience": {
-      "title": "Developer Experience",
-      "interactiveCli": {
-        "title": "Interactive CLI",
-        "description": "User-friendly menu-driven interface for all operations."
-      },
-      "dryRunMode": {
-        "title": "Dry-Run Mode",
-        "description": "Preview changes without writing files. Safe path validation included."
-      }
-    }
-  },
-  "simpleToUse": {
-    "codeSection": {
-      "title": "and simple to use",
-      "description": "Get started with a single command or integrate programmatically"
-    },
-    "aiSection": {
-      "title": "Automatic Translation with Gemini AI",
-      "description": "Never manually translate again. Our Gemini integration automatically fills in missing translations while preserving your placeholders and formatting.",
-      "aiBadge": "AI-Powered",
-      "aiTranslating": "AI translating...",
-      "perks": {
-        "automaticTranslations": "Auto-translate missing values with Gemini AI",
-        "preservePlaceholders": "Preserves {{placeholders}}, HTML tags, and formatting",
-        "chooseModel": "Choose from multiple Gemini models",
-        "batchProcessing": "Batch processing for efficiency"
-      }
-    }
-  },
-  "gettingStarted": {
-    "title": "Get started in seconds",
-    "description": "Install via npm and run a single command to convert your i18n JSON files to Excel or vice versa."
-  },
-  "faq": {
-    "title": "FAQ",
-    "description": "Answers to common questions about i18n-Excel-Manager",
-    "actions": {
-      "expandFirst": "Open first question",
-      "collapseAll": "Collapse all"
-    },
-    "items": {
-      "formatsSupported": {
-        "q": "Which file formats are supported?",
-        "a": "The tool supports converting between i18n JSON files and Excel (XLSX) format. It's optimized for modern web projects and works seamlessly with Angular applications."
-      },
-      "nestedKeys": {
-        "q": "Does it support nested translation keys?",
-        "a": "Yes, absolutely. Nested objects are automatically flattened into dot-notation when exporting to Excel (e.g., 'header.title') and restored back to the original nested structure when importing from Excel to JSON."
-      },
-      "aiTranslation": {
-        "q": "How does AI auto-translation work?",
-        "a": "The tool integrates with Google's Gemini AI to automatically translate missing values while preserving placeholders like {{name}}, HTML tags, and your original formatting. You can choose which Gemini model to use for translations."
-      },
-      "dryRun": {
-        "q": "Is there a safe way to preview changes before applying them?",
-        "a": "Yes. The dry-run mode lets you preview all changes without modifying any files. It includes path validation to prevent accidental overwrites and shows you exactly what would be created or modified."
-      },
-      "angularIntegration": {
-        "q": "How do I integrate this tool with my Angular project?",
-        "a": "You can use it via the interactive CLI in your project directory, or integrate it programmatically in your build process. The tool works with the standard i18n structure (e.g., public/assets/i18n or src/assets/i18n)."
-      },
-      "geminiApiKey": {
-        "q": "Do I need a Gemini API key for AI auto-translation?",
-        "a": "Yes, you need a Gemini API key to use the AI auto-translation feature. You can obtain a free API key from Google AI Studio at https://makersuite.google.com/app/api-key."
-      },
-      "testedVersions": {
-        "q": "Which versions of Angular and ngx-translate are supported?",
-        "a": "The tool has been tested and works seamlessly with Angular version 20+ and ngx-translate v17+. While it may work with earlier versions, these are the officially tested and supported versions."
-      }
-    }
-  },
-  "footer": {
-    "quickLinks": "Quick Links"
-  },
   "languageNames": {
-    "en": "English",
     "de": "German",
-    "fr": "French",
+    "en": "English",
     "es": "Spanish",
+    "fr": "French",
     "pt": "Portuguese",
     "tr": "Turkish"
   },
+  "simpleToUse": {
+    "aiSection": {
+      "aiBadge": "AI-Powered",
+      "aiTranslating": "AI translating...",
+      "description": "Never manually translate again. Our Gemini integration automatically fills in missing translations while preserving your placeholders and formatting.",
+      "perks": {
+        "automaticTranslations": "Auto-translate missing values with Gemini AI",
+        "batchProcessing": "Batch processing for efficiency",
+        "chooseModel": "Choose from multiple Gemini models",
+        "preservePlaceholders": "Preserves {{placeholders}}, HTML tags, and formatting"
+      },
+      "title": "Automatic Translation with Gemini AI"
+    },
+    "codeSection": {
+      "description": "Get started with a single command or integrate programmatically",
+      "title": "and simple to use"
+    }
+  },
   "tostify": {
     "copySuccess": "Copied to clipboard!"
-  },
-  "a11y": {
-    "skipToContent": "Skip to content",
-    "languageSwitcherLabel": "Select a language",
-    "codeRegionLabel": "Code example in {{lang}}",
-    "socialLink": "Visit our {{platform}} page",
-    "scrollDown": "Scroll down to content",
-    "copyCommand": "Copy installation command to clipboard",
-    "opensInNewTab": "(opens in a new tab)",
-    "reloadPage": "Reload page",
-    "scrollToTop": "Scroll to top",
-    "socialNav": "Social Media Links"
   }
 }
