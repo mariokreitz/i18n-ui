@@ -80,6 +80,10 @@
     "title": "Get Started in Seconds",
     "description": "Install via npm and run a single command to convert your i18n JSON files to Excel or vice versa."
   },
+  "faq": {
+    "title": "FAQ",
+    "description": "Answers to common questions about i18n-Excel-Converter"
+  },
   "footer": {
     "quickLinks": "Quick Links"
   },
