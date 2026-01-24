@@ -1,13 +1,12 @@
 {
   "hero": {
-    "getStarted": "Get Started",
     "newBadge": "new",
     "newFeature": "Latest integration just arrived",
     "subTitle": "Effortless conversion between i18n JSON files and Excel for Angular and modern web projects.",
     "title": "Revolutionize Your i18n translations with AI"
   },
   "features": {
-    "title": "Powerful Features",
+    "title": "with powerful features",
     "description": "Everything you need to manage internationalization in your projects",
     "coreConversion": {
       "title": "Core Conversion",
@@ -60,7 +59,7 @@
   },
   "simpleToUse": {
     "codeSection": {
-      "title": "Simple to use",
+      "title": "and simple to use",
       "description": "Get started with a single command or integrate programmatically"
     },
     "aiSection": {
@@ -77,7 +76,7 @@
     }
   },
   "gettingStarted": {
-    "title": "Get Started in Seconds",
+    "title": "Get started in seconds",
     "description": "Install via npm and run a single command to convert your i18n JSON files to Excel or vice versa."
   },
   "faq": {
