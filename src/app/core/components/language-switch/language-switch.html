@@ -5,12 +5,12 @@
 @if (isMenuOpen()) {
   <ul
     (appClickOutside)="toggleMenuSelection()"
-    class="bg-midnight border-i18n-lighter-blue/30 absolute top-15.5 right-0 z-30 flex flex-col overflow-hidden rounded-b-2xl border"
+    class="bg-bg-page border-border-highlight absolute top-15.5 right-0 z-30 flex flex-col overflow-hidden rounded-b-2xl border shadow-lg"
   >
     @for (lang of languages(); track $index) {
       <li
-        [class.bg-i18n-lighter-green]="isCurrentLanguage()(lang)"
-        class="hover:bg-i18n-lighter-green flex cursor-pointer items-center justify-center transition-colors"
+        [class.bg-brand-secondary]="isCurrentLanguage()(lang)"
+        class="hover:bg-brand-secondary/80 flex cursor-pointer items-center justify-center transition-colors active:scale-95"
         id="lang-{{ lang | lowercase }}"
       >
         <button (click)="onSelectLang(lang)" class="h-full w-full px-2 py-1" type="button">
