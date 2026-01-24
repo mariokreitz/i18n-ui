@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RootLayout } from '../../core/layouts/root-layout/root-layout';
+import { Faq } from '../../features/faq/faq';
 import { Features } from '../../features/features/features';
 import { GettingStarted } from '../../features/getting-started/getting-started';
 import { Hero } from '../../features/hero/hero';
@@ -7,7 +8,7 @@ import { SimpleToUse } from '../../features/simple-to-use/simple-to-use';
 
 @Component({
   selector: 'app-home',
-  imports: [RootLayout, Hero, Features, SimpleToUse, GettingStarted],
+  imports: [RootLayout, Hero, Features, SimpleToUse, GettingStarted, Faq],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
