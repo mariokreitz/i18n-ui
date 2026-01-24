@@ -140,6 +140,7 @@
     "copyCommand": "Copy installation command to clipboard",
     "opensInNewTab": "(opens in a new tab)",
     "reloadPage": "Reload page",
-    "scrollToTop": "Scroll to top"
+    "scrollToTop": "Scroll to top",
+    "socialNav": "Social Media Links"
   }
 }
