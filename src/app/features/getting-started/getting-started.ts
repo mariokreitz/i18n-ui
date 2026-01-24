@@ -17,6 +17,9 @@ import { copyTextToClipboard } from '../../shared/utils';
   templateUrl: './getting-started.html',
   styleUrl: './getting-started.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: {
+    id: 'getting-started',
+  },
 })
 export class GettingStarted {
   public readonly pkgManager: string[] = INSTALL_WITH_PKG_MANAGER_COMMANDS;
