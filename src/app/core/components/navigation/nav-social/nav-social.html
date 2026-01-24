@@ -3,7 +3,9 @@
     @for (link of SOCIAL_MEDIA_LINKS; track $index) {
       <li class="flex items-center justify-center transition-transform active:scale-95" id="social-{{ link.name | lowercase }}">
         <a [href]="link.url" [title]="link.name" class="hover:text-brand-primary transition-colors" target="_blank">
+          <span class="sr-only">{{ 'a11y.socialLink' | translate: { platform: link.name } }}</span>
           <fa-icon [icon]="link.faIcon" class="text-xl" />
+          <span class="sr-only">{{ 'a11y.opensInNewTab' | translate }}</span>
         </a>
       </li>
     }
