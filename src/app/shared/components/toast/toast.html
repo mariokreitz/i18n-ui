@@ -1,0 +1,24 @@
+<div
+  [class.bg-i18n-blue-10]="toast()?.type === 'info'"
+  [class.bg-i18n-green-10]="toast()?.type === 'success'"
+  [class.bg-red-500-10]="toast()?.type === 'error'"
+  [class.border-i18n-blue]="toast()?.type === 'info'"
+  [class.border-i18n-green]="toast()?.type === 'success'"
+  [class.border-red-500]="toast()?.type === 'error'"
+  [class.opacity-0]="!visible()"
+  [class.opacity-100]="visible()"
+  [class.translate-y-0]="visible()"
+  [class.translate-y-8]="!visible()"
+  class="backdrop-blur-glass fixed bottom-8 left-1/2 z-50 flex -translate-x-1/2 items-center gap-3 rounded-lg border px-4 py-3 shadow-lg transition-all duration-300 sm:bottom-12"
+  role="alert"
+>
+  @if (toast()?.type === 'success') {
+    <fa-icon [icon]="successIcon" class="text-i18n-green" />
+  } @else if (toast()?.type === 'info') {
+    <fa-icon [icon]="infoIcon" class="text-i18n-light-blue" />
+  } @else {
+    <fa-icon [icon]="errorIcon" class="text-red-500" />
+  }
+
+  <span class="text-text-primary text-sm font-medium">{{ toast()?.message }}</span>
+</div>
