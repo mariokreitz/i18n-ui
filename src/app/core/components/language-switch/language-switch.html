@@ -23,7 +23,6 @@
       <li
         [class.bg-brand-secondary]="isCurrentLanguage()(lang)"
         class="hover:bg-brand-secondary/80 flex cursor-pointer items-center justify-center transition-colors active:scale-95"
-        id="lang-{{ lang | lowercase }}"
         role="none"
       >
         <button #langButton (click)="onSelectLang(lang)" class="h-full w-full px-2 py-1 focus:outline-none" role="menuitem" type="button">
