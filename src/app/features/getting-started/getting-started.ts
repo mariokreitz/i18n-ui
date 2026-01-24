@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, Signal, signal, WritableSignal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, Signal, signal, WritableSignal } from '@angular/core';
 import { FaIconComponent, IconDefinition } from '@fortawesome/angular-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-regular-svg-icons/faCircleCheck';
 import { faCopy } from '@fortawesome/free-regular-svg-icons/faCopy';
@@ -9,6 +9,7 @@ import {
   I18N_EXCEL_MANAGER_YARN_INSTALL_COMMAND,
   INSTALL_WITH_PKG_MANAGER_COMMANDS,
 } from '../../core/constants';
+import { ToastService } from '../../core/services';
 import { copyTextToClipboard } from '../../shared/utils';
 
 @Component({
@@ -25,7 +26,7 @@ export class GettingStarted {
   public readonly pkgManager: string[] = INSTALL_WITH_PKG_MANAGER_COMMANDS;
   public readonly copyIcon: IconDefinition = faCopy;
   public readonly successIcon: IconDefinition = faCircleCheck;
-
+  private readonly toastService: ToastService = inject(ToastService);
   private readonly _selectedPkgManager: WritableSignal<string> = signal<string>('npm');
   public readonly selectedPkgManager: Signal<string> = this._selectedPkgManager.asReadonly();
   public readonly currentInstallCommand: Signal<string> = computed(() => {
@@ -48,12 +49,11 @@ export class GettingStarted {
   }
 
   public async copyToClipboard(): Promise<void> {
-    try {
-      await copyTextToClipboard(this.currentInstallCommand());
-      this._isCopySuccess.set(true);
-      setTimeout(() => this._isCopySuccess.set(false), 2000);
-    } catch (e) {
-      console.error('Failed to copy text to clipboard:', e);
-    }
+    await copyTextToClipboard(this.currentInstallCommand());
+    this.toastService.show('Command copied to clipboard!', 'success');
+    this._isCopySuccess.set(true);
+    setTimeout(() => {
+      this._isCopySuccess.set(false);
+    }, 2000);
   }
 }

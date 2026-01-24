@@ -24,7 +24,7 @@
       <button
         (click)="copyToClipboard()"
         [disabled]="isCopySuccess()"
-        class="focus-visible:ring-i18n-light-blue focus-visible:ring-offset-midnight disabled:text-i18n-lighter-blue/60 flex h-11 w-11 items-center justify-center text-base transition-colors duration-200 ease-in-out focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
+        class="focus-visible:ring-brand-primary focus-visible:ring-offset-bg-page disabled:text-text-muted flex h-11 w-11 items-center justify-center text-base transition-all duration-200 ease-in-out focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none active:scale-95"
         type="button"
       >
         @if (!isCopySuccess()) {
