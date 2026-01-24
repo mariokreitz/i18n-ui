@@ -9,9 +9,13 @@ import { faTriangleExclamation } from '@fortawesome/free-solid-svg-icons/faTrian
 import { faWandMagicSparkles } from '@fortawesome/free-solid-svg-icons/faWandMagicSparkles';
 import { i18nExcelManagerFeature } from '../interfaces';
 
+export const INSTALL_WITH_PKG_MANAGER_COMMANDS: string[] = ['npm', 'yarn', 'pnpm'];
+
 export const GITHUB_LICENSE_URL = 'https://github.com/mariokreitz/i18n-excel-manager/blob/main/LICENSE';
 
 export const I18N_EXCEL_MANAGER_NPM_INSTALL_COMMAND = 'npm i i18n-excel-manager --save-dev';
+export const I18N_EXCEL_MANAGER_YARN_INSTALL_COMMAND = 'yarn add i18n-excel-manager --dev';
+export const I18N_EXCEL_MANAGER_PNPM_INSTALL_COMMAND = 'pnpm add i18n-excel-manager --save-dev';
 
 export const I18N_EXCEL_MANAGER_CORE_FEATURES: i18nExcelManagerFeature[] = [
   {
