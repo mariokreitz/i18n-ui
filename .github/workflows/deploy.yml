@@ -1,0 +1,63 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: ['main']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build -- --base-href /i18n-ui/
+
+      - name: Fix SPA Routing (404 Hack)
+        # Assuming '@angular/build:application' outputs to dist/i18n-ui/browser
+        # If the build fails here, check the actual output directory
+        run: |
+          if [ -d "dist/i18n-ui/browser" ]; then
+            cp dist/i18n-ui/browser/index.html dist/i18n-ui/browser/404.html
+          else
+            # Fallback for plain dist/i18n-ui in case browser folder is missing
+             cp dist/i18n-ui/index.html dist/i18n-ui/404.html
+          fi
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Dynamic check for path not supported in 'with', so we stick to the most likely one
+          # or we could move the files to a standard directory first
+          path: dist/i18n-ui/browser
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
