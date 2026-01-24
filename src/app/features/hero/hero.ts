@@ -3,13 +3,14 @@ import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FaIconComponent, IconDefinition } from '@fortawesome/angular-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons/faChevronDown';
 import { TranslatePipe } from '@ngx-translate/core';
+import { FadeInDirective } from '../../shared/directives';
 
 @Component({
   selector: 'app-hero-section',
   templateUrl: './hero.html',
   styleUrl: './hero.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [NgOptimizedImage, TranslatePipe, UpperCasePipe, FaIconComponent],
+  imports: [NgOptimizedImage, TranslatePipe, UpperCasePipe, FaIconComponent, FadeInDirective],
   host: {
     class: 'flex flex-col justify-center relative min-h-[calc(100vh-79px)]',
   },
