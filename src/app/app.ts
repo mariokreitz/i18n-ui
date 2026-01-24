@@ -48,6 +48,7 @@ export class App implements OnInit {
   public ngOnInit(): void {
     const language: string = this.translate.getBrowserLang() || 'en';
     this.document.documentElement.lang = language;
+    this.translate.use(language);
 
     if (['ar', 'fa', 'da', 'ks', 'ps', 'ur'].includes(language)) {
       this.document.documentElement.dir = 'rtl';
