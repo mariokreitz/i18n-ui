@@ -27,6 +27,7 @@
         class="focus-visible:ring-brand-primary focus-visible:ring-offset-bg-page disabled:text-text-muted flex h-11 w-11 items-center justify-center text-base transition-all duration-200 ease-in-out focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none active:scale-95"
         type="button"
       >
+        <span class="sr-only">{{ 'a11y.copyCommand' | translate }}</span>
         @if (!isCopySuccess()) {
           <fa-icon [icon]="copyIcon" />
         } @else {
