@@ -1,1 +1,16 @@
-<p>getting-started works!</p>
+<section class="flex flex-col items-center justify-center gap-12 py-16 sm:gap-16 sm:py-20 lg:gap-20 lg:py-24">
+  <header class="flex flex-col gap-3 text-center sm:gap-4">
+    <h2 class="text-2xl font-bold sm:text-3xl lg:text-5xl xl:text-6xl">{{ 'gettingStarted.title' | translate }}</h2>
+    <p class="text-sm sm:text-base lg:text-lg">{{ 'gettingStarted.description' | translate }}</p>
+  </header>
+  <div class="bg-i18n-terminal-gray flex w-full max-w-125 justify-between overflow-x-auto rounded-2xl p-4 sm:px-8 sm:py-6">
+    <p type="button">{{ installCommand }}</p>
+    <button (click)="copyToClipboard()" [disabled]="isCopySuccess()" type="button">
+      @if (!isCopySuccess()) {
+        <fa-icon [icon]="copyIcon" />
+      } @else {
+        <fa-icon [icon]="successIcon" class="text-i18n-light-green" />
+      }
+    </button>
+  </div>
+</section>
