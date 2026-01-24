@@ -53,7 +53,7 @@ await convertToExcel(
   <div class="flex flex-col items-center justify-center gap-8 lg:gap-16 xl:gap-20">
     <div class="grid w-full grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:gap-12">
       <article class="flex flex-col gap-8">
-        <p class="bg-i18n-lighter-blue text-i18n-light-blue w-fit rounded-full px-4 py-2">
+        <p class="bg-i18n-lighter-blue text-i18n-blue w-fit rounded-full px-4 py-2">
           <fa-icon [icon]="aiIcon" class="animate-pulse" />
           {{ 'simpleToUse.aiSection.aiBadge' | translate }}
         </p>
@@ -65,7 +65,7 @@ await convertToExcel(
           @for (perk of aiPoweredPerks; track $index) {
             <li class="flex items-center gap-4">
               <p class="bg-i18n-lighter-blue flex h-6 w-6 items-center justify-center rounded-full">
-                <fa-icon [icon]="success" class="text-i18n-light-blue" />
+                <fa-icon [icon]="success" class="text-i18n-blue" />
               </p>
               <p>{{ perk | translate }}</p>
             </li>
