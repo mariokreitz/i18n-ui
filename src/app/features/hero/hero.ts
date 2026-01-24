@@ -3,6 +3,7 @@ import { ChangeDetectionStrategy, Component, Signal, signal, WritableSignal } fr
 import { FaIconComponent, IconDefinition } from '@fortawesome/angular-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-regular-svg-icons/faCircleCheck';
 import { faCopy } from '@fortawesome/free-regular-svg-icons/faCopy';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons/faChevronDown';
 import { TranslatePipe } from '@ngx-translate/core';
 import { I18N_EXCEL_MANAGER_NPM_INSTALL_COMMAND } from '../../core/constants';
 import { copyTextToClipboard } from '../../shared/utils';
@@ -20,6 +21,7 @@ import { copyTextToClipboard } from '../../shared/utils';
 export class Hero {
   public readonly copyIcon: IconDefinition = faCopy;
   public readonly successIcon: IconDefinition = faCircleCheck;
+  public readonly chevronDownIcon: IconDefinition = faChevronDown;
   public readonly installCommand: string = I18N_EXCEL_MANAGER_NPM_INSTALL_COMMAND;
 
   private readonly _isCopySuccess: WritableSignal<boolean> = signal<boolean>(false);
