@@ -1,6 +1,17 @@
-<section class="flex flex-col gap-16 py-24">
-  <header class="flex flex-col items-center gap-4">
+<section class="flex flex-col gap-12 py-24 sm:gap-16">
+  <header class="flex flex-col items-center gap-4 text-center">
     <h2 class="text-3xl font-bold sm:text-4xl lg:text-5xl xl:text-6xl">{{ 'faq.title' | translate }}</h2>
-    <p>{{ 'faq.description' | translate }}</p>
+    <p class="text-i18n-white/80 max-w-2xl">{{ 'faq.description' | translate }}</p>
   </header>
+
+  <div class="mx-auto w-full max-w-3xl">
+    <dl class="flex flex-col gap-6">
+      @for (item of faqItems; track item.id) {
+        <div class="border-i18n-lighter-blue/30 bg-midnight/50 rounded-xl border p-5 backdrop-blur-sm sm:p-6">
+          <dt class="text-i18n-white text-base font-semibold sm:text-lg">{{ item.questionKey | translate }}</dt>
+          <dd class="text-i18n-white/80 mt-3 leading-relaxed">{{ item.answerKey | translate }}</dd>
+        </div>
+      }
+    </dl>
+  </div>
 </section>
