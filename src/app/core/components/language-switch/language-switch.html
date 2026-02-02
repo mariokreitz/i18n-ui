@@ -5,7 +5,7 @@
   [attr.aria-expanded]="isMenuOpen()"
   [attr.aria-label]="'a11y.languageSwitcherLabel' | translate"
   aria-haspopup="true"
-  class="border-border-highlight hover:bg-bg-surface-active rounded-full border px-4 py-2 transition-all active:scale-95"
+  class="border-border-highlight hover:bg-bg-surface-active hover:border-brand-primary rounded-full border px-4 py-2 transition-all duration-300 active:scale-95"
   type="button"
 >
   <fa-icon [icon]="langIcon" class="text-xl" />
@@ -15,26 +15,28 @@
   <ul
     (appClickOutside)="closeMenu()"
     (keydown)="onMenuKeydown($event)"
-    class="bg-bg-page border-border-highlight absolute top-15.5 right-0 z-30 flex flex-col overflow-hidden rounded-b-2xl border shadow-lg"
+    class="border-border-subtle bg-bg-surface backdrop-blur-glass absolute top-16 right-0 z-30 flex min-w-40 flex-col gap-1 overflow-hidden rounded-xl border p-2 shadow-lg"
     role="menu"
     tabindex="-1"
   >
     @for (lang of languages(); track $index) {
-      <li
-        [class.bg-brand-secondary]="isCurrentLanguage()(lang)"
-        class="hover:bg-brand-secondary/80 flex cursor-pointer items-center justify-center transition-colors active:scale-95"
-        role="none"
-      >
+      <li role="none">
         <button
           #langButton
           (click)="onSelectLang(lang)"
-          class="flex h-full w-full items-center justify-center gap-2 px-3 py-1 focus:outline-none"
+          [class.bg-brand-secondary]="isCurrentLanguage()(lang)"
+          [class.text-i18n-white]="isCurrentLanguage()(lang)"
+          class="focus-visible:ring-brand-primary text-text-primary hover:bg-bg-surface-active flex w-full items-center justify-between gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-all duration-200 focus:outline-none focus-visible:ring-2"
           role="menuitem"
           type="button"
         >
           <span>{{ 'languageNames.' + lang | translate }}</span>
           @if (isAiTranslated(lang)) {
-            <span [title]="'a11y.aiTranslatedTooltip' | translate" aria-label="AI translated" class="ai-badge">
+            <span
+              [title]="'a11y.aiTranslatedTooltip' | translate"
+              aria-label="AI translated"
+              class="bg-i18n-light-blue/15 text-i18n-light-blue hover:bg-i18n-light-blue/25 inline-flex items-center justify-center rounded-md px-1.5 py-1 text-[0.625rem] font-semibold transition-all duration-200"
+            >
               <fa-icon [icon]="aiIcon" size="xs" />
             </span>
           }
