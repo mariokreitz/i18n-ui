@@ -1,9 +1,26 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, computed, ElementRef, inject, Signal, signal, viewChild, viewChildren, WritableSignal } from '@angular/core';
+import {
+  Component,
+  computed,
+  DestroyRef,
+  ElementRef,
+  inject,
+  OnInit,
+  Signal,
+  signal,
+  viewChild,
+  viewChildren,
+  WritableSignal,
+} from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FaIconComponent, IconDefinition } from '@fortawesome/angular-fontawesome';
 import { faLanguage } from '@fortawesome/free-solid-svg-icons/faLanguage';
+import { faWandMagicSparkles } from '@fortawesome/free-solid-svg-icons/faWandMagicSparkles';
 import { Language, TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { ClickOutsideDirective } from '../../../shared/directives';
+import { ToastService } from '../../services';
+
+const HUMAN_TRANSLATED_LANGUAGES: readonly string[] = ['de', 'en'];
 
 @Component({
   selector: 'app-language-switch',
@@ -11,8 +28,13 @@ import { ClickOutsideDirective } from '../../../shared/directives';
   templateUrl: './language-switch.html',
   styleUrl: './language-switch.css',
 })
-export class LanguageSwitch {
+export class LanguageSwitch implements OnInit {
   public readonly langIcon: IconDefinition = faLanguage;
+  public readonly aiIcon: IconDefinition = faWandMagicSparkles;
+  public isCurrentLanguage = computed<(lang: Language) => boolean>(() => {
+    const current: string | null = this.currentLanguage();
+    return (lang: Language) => lang === current;
+  });
   private readonly toggleBtn: Signal<ElementRef<HTMLButtonElement>> = viewChild.required<ElementRef<HTMLButtonElement>>('toggleBtn');
   private readonly langButtons: Signal<readonly ElementRef<HTMLButtonElement>[]> =
     viewChildren<ElementRef<HTMLButtonElement>>('langButton');
@@ -22,17 +44,29 @@ export class LanguageSwitch {
   public readonly isMenuOpen: Signal<boolean> = this._isMenuOpen.asReadonly();
   private readonly _currentLanguage: WritableSignal<Language | null> = signal<Language | null>(null);
   public readonly currentLanguage: Signal<Language | null> = this._currentLanguage.asReadonly();
-  public isCurrentLanguage = computed<(lang: Language) => boolean>(() => {
-    const current: string | null = this.currentLanguage();
-    return (lang: Language) => lang === current;
-  });
   private focusedIndex = -1;
   private readonly translate: TranslateService = inject(TranslateService);
   private readonly document: Document = inject(DOCUMENT);
+  private readonly toastService: ToastService = inject(ToastService);
+  private readonly destroyRef: DestroyRef = inject(DestroyRef);
 
   constructor() {
     this._languageList.set([...this.translate.getLangs()]);
-    this._currentLanguage.set(this.translate.getCurrentLang());
+  }
+
+  public isAiTranslated = (lang: Language): boolean => !HUMAN_TRANSLATED_LANGUAGES.includes(lang);
+
+  public ngOnInit(): void {
+    // Subscribe to language changes to keep currentLanguage in sync
+    this.translate.onLangChange.pipe(takeUntilDestroyed(this.destroyRef)).subscribe((event) => {
+      this._currentLanguage.set(event.lang);
+    });
+
+    // Set initial language from current state (may be set by App.ngOnInit)
+    const currentLang = this.translate.currentLang || this.translate.defaultLang;
+    if (currentLang) {
+      this._currentLanguage.set(currentLang);
+    }
   }
 
   public toggleMenuSelection(): void {
@@ -56,6 +90,11 @@ export class LanguageSwitch {
     this.document.documentElement.lang = lang;
     this.translate.use(lang);
     this._currentLanguage.set(lang);
+
+    if (this.isAiTranslated(lang)) {
+      this.toastService.show('tostify.aiTranslatedHint', 'info', 5000);
+    }
+
     this.closeMenu();
     this.toggleBtn().nativeElement.focus();
   }

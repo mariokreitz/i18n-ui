@@ -1,5 +1,6 @@
 {
   "a11y": {
+    "aiTranslatedTooltip": "Translated using AI",
     "codeRegionLabel": "Code example in {{lang}}",
     "copyCommand": "Copy installation command to clipboard",
     "languageSwitcherLabel": "Select a language",
@@ -141,6 +142,7 @@
     }
   },
   "tostify": {
+    "aiTranslatedHint": "This language was translated using AI",
     "copySuccess": "Copied to clipboard!"
   }
 }

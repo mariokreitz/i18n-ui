@@ -1,5 +1,6 @@
 {
   "a11y": {
+    "aiTranslatedTooltip": "Mit KI übersetzt",
     "codeRegionLabel": "Code-Beispiel in {{lang}}",
     "copyCommand": "Installationsbefehl in die Zwischenablage kopieren",
     "languageSwitcherLabel": "Sprache auswählen",
@@ -141,6 +142,7 @@
     }
   },
   "tostify": {
+    "aiTranslatedHint": "Diese Sprache wurde mit KI übersetzt",
     "copySuccess": "In die Zwischenablage kopiert!"
   }
 }

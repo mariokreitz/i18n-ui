@@ -141,6 +141,7 @@
     }
   },
   "tostify": {
+    "aiTranslatedHint": "Bu dil yapay zeka ile çevrildi",
     "copySuccess": "Panoya kopyalandı!"
   }
 }
