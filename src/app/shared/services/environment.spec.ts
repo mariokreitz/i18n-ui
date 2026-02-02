@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { Environment } from './environment';
+import { EnvironmentService } from './environment';
 
 describe('Environment', () => {
-  let service: Environment;
+  let service: EnvironmentService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(Environment);
+    service = TestBed.inject(EnvironmentService);
   });
 
   it('should be created', () => {

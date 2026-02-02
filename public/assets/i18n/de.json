@@ -1,5 +1,6 @@
 {
   "a11y": {
+    "aiTranslatedTooltip": "Mit KI übersetzt",
     "codeRegionLabel": "Code-Beispiel in {{lang}}",
     "copyCommand": "Installationsbefehl in die Zwischenablage kopieren",
     "languageSwitcherLabel": "Sprache auswählen",
@@ -19,15 +20,15 @@
     "description": "Antworten auf häufig gestellte Fragen zum i18n-Excel-Manager",
     "items": {
       "aiTranslation": {
-        "a": "Das Tool integriert sich mit Googles Gemini AI, um fehlende Werte automatisch zu übersetzen, wobei Platzhalter wie {{name}}, HTML-Tags und Ihre ursprüngliche Formatierung erhalten bleiben. Sie können wählen, welches Gemini-Modell für Übersetzungen verwendet werden soll.",
+        "a": "Das Tool integriert sich mit Googles Gemini AI, um fehlende Werte automatisch zu übersetzen, wobei Platzhalter wie {{name}}, HTML-Tags und deine ursprüngliche Formatierung erhalten bleiben. Du kannst wählen, welches Gemini-Modell für Übersetzungen verwendet werden soll.",
         "q": "Wie funktioniert die KI-Auto-Übersetzung?"
       },
       "angularIntegration": {
-        "a": "Sie können es über die interaktive CLI in Ihrem Projektverzeichnis verwenden oder programmgesteuert in Ihren Build-Prozess integrieren. Das Tool funktioniert mit der Standard-i18n-Struktur (z. B. public/assets/i18n oder src/assets/i18n).",
+        "a": "Du kannst es über die interaktive CLI in deinem Projektverzeichnis nutzen oder programmgesteuert in deinen Build-Prozess integrieren. Das Tool funktioniert mit der Standard-i18n-Struktur (z. B. public/assets/i18n oder src/assets/i18n).",
         "q": "Wie integriere ich dieses Tool in mein Angular-Projekt?"
       },
       "dryRun": {
-        "a": "Ja. Der Dry-Run-Modus ermöglicht es Ihnen, alle Änderungen vorab anzuzeigen, ohne Dateien zu ändern. Er beinhaltet eine Pfadvalidierung, um versehentliches Überschreiben zu verhindern, und zeigt Ihnen genau, was erstellt oder geändert würde.",
+        "a": "Ja. Der Dry-Run-Modus ermöglicht es dir, alle Änderungen vorab anzuzeigen, ohne Dateien zu ändern. Er beinhaltet eine Pfadvalidierung, um versehentliches Überschreiben zu verhindern, und zeigt dir genau, was erstellt oder geändert würde.",
         "q": "Gibt es eine sichere Möglichkeit, Änderungen vor der Anwendung anzuzeigen?"
       },
       "formatsSupported": {
@@ -35,7 +36,7 @@
         "q": "Welche Dateiformate werden unterstützt?"
       },
       "geminiApiKey": {
-        "a": "Ja, Sie benötigen einen Gemini-API-Schlüssel, um die KI-Auto-Übersetzungsfunktion zu nutzen. Einen kostenlosen API-Schlüssel erhalten Sie bei Google AI Studio unter https://makersuite.google.com/app/api-key.",
+        "a": "Ja, du benötigst einen Gemini-API-Schlüssel, um die KI-Auto-Übersetzung zu nutzen. Einen kostenlosen API-Schlüssel erhältst du bei Google AI Studio unter https://makersuite.google.com/app/api-key.",
         "q": "Benötige ich einen Gemini-API-Schlüssel für die KI-Auto-Übersetzung?"
       },
       "nestedKeys": {
@@ -74,7 +75,7 @@
         "title": "Bidirektionale Konvertierung"
       },
       "languageMapping": {
-        "description": "Verwenden Sie vollständige Sprachnamen in Excel-Headern (z. B. 'Deutsch' anstelle von 'de').",
+        "description": "Verwende vollständige Sprachnamen in Excel-Headern (z. B. 'Deutsch' anstelle von 'de').",
         "title": "Sprachzuordnung"
       },
       "nestedSupport": {
@@ -87,7 +88,7 @@
         "title": "Validierung"
       }
     },
-    "description": "Alles, was Sie zur Verwaltung der Internationalisierung in Ihren Projekten benötigen",
+    "description": "Alles, was du zur Verwaltung der Internationalisierung in deinen Projekten benötigst",
     "developerExperience": {
       "dryRunMode": {
         "description": "Änderungen vorab anzeigen, ohne Dateien zu schreiben. Sichere Pfadvalidierung enthalten.",
@@ -105,14 +106,14 @@
     "quickLinks": "Schnellzugriffe"
   },
   "gettingStarted": {
-    "description": "Installieren Sie über npm und führen Sie einen einzigen Befehl aus, um Ihre i18n-JSON-Dateien in Excel zu konvertieren oder umgekehrt.",
+    "description": "Installiere das Tool über npm und führe einen einzigen Befehl aus, um deine i18n-JSON-Dateien in Excel zu konvertieren oder umgekehrt.",
     "title": "In Sekundenschnelle starten"
   },
   "hero": {
     "newBadge": "neu",
     "newFeature": "Neueste Integration gerade eingetroffen",
     "subTitle": "Mühelose Konvertierung zwischen i18n-JSON-Dateien und Excel für Angular und moderne Webprojekte.",
-    "title": "Modernisieren Sie Ihre i18n-Übersetzungen mit KI"
+    "title": "Modernisiere deine i18n-Übersetzungen mit KI"
   },
   "languageNames": {
     "de": "Deutsch",
@@ -126,11 +127,11 @@
     "aiSection": {
       "aiBadge": "KI-gestützt",
       "aiTranslating": "KI übersetzt...",
-      "description": "Nie wieder manuell übersetzen. Die Gemini-Integration füllt fehlende Übersetzungen automatisch aus, während Ihre Platzhalter und Formatierungen erhalten bleiben.",
+      "description": "Nie wieder manuell übersetzen. Die Gemini-Integration füllt fehlende Übersetzungen automatisch aus, während deine Platzhalter und Formatierungen erhalten bleiben.",
       "perks": {
         "automaticTranslations": "Fehlende Werte mit Gemini AI automatisch übersetzen",
         "batchProcessing": "Stapelverarbeitung für Effizienz",
-        "chooseModel": "Wählen Sie aus mehreren Gemini-Modellen",
+        "chooseModel": "Wähle aus mehreren Gemini-Modellen",
         "preservePlaceholders": "Behält {{placeholders}}, HTML-Tags und Formatierung"
       },
       "title": "Automatische Übersetzung mit Gemini AI"
@@ -141,6 +142,7 @@
     }
   },
   "tostify": {
+    "aiTranslatedHint": "Diese Sprache wurde mit KI übersetzt",
     "copySuccess": "In die Zwischenablage kopiert!"
   }
 }

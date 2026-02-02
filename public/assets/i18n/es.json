@@ -141,6 +141,7 @@
     }
   },
   "tostify": {
+    "aiTranslatedHint": "Este idioma fue traducido por IA",
     "copySuccess": "¡Copiado al portapapeles!"
   }
 }

@@ -141,6 +141,7 @@
     }
   },
   "tostify": {
+    "aiTranslatedHint": "Cette langue a été traduite par IA",
     "copySuccess": "Copié dans le presse-papiers !"
   }
 }

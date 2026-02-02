@@ -141,6 +141,7 @@
     }
   },
   "tostify": {
+    "aiTranslatedHint": "Este idioma foi traduzido por IA",
     "copySuccess": "Copiado para a área de transferência!"
   }
 }
