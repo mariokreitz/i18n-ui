@@ -1,5 +1,6 @@
 import { NgOptimizedImage } from '@angular/common';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LanguageSwitch } from '../language-switch/language-switch';
 import { NavSocial } from '../navigation/nav-social/nav-social';
@@ -9,9 +10,12 @@ import { NavSocial } from '../navigation/nav-social/nav-social';
   imports: [NgOptimizedImage, NavSocial, LanguageSwitch, TranslatePipe],
   templateUrl: './header.html',
   styleUrl: './header.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Header {
+  private readonly router: Router = inject(Router);
+
   public reloadPage(): void {
-    window.location.reload();
+    this.router.navigate(['/']);
   }
 }
