@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { RootLayout } from '../../core/layouts/root-layout/root-layout';
 import { Faq } from '../../features/faq/faq';
@@ -12,6 +12,7 @@ import { SimpleToUse } from '../../features/simple-to-use/simple-to-use';
   imports: [RootLayout, Hero, Features, SimpleToUse, GettingStarted, Faq],
   templateUrl: './home.html',
   styleUrl: './home.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class Home implements OnInit {
   private readonly meta: Meta = inject(Meta);
@@ -26,19 +27,17 @@ export default class Home implements OnInit {
 
     this.title.setTitle(title);
 
-    this.meta.addTags([
-      // Open Graph
-      { property: 'og:title', content: title },
-      { property: 'og:description', content: description },
-      { property: 'og:image', content: image },
-      { property: 'og:url', content: url },
-      { property: 'og:type', content: 'website' },
+    // Open Graph
+    this.meta.updateTag({ property: 'og:title', content: title }, "property='og:title'");
+    this.meta.updateTag({ property: 'og:description', content: description }, "property='og:description'");
+    this.meta.updateTag({ property: 'og:image', content: image }, "property='og:image'");
+    this.meta.updateTag({ property: 'og:url', content: url }, "property='og:url'");
+    this.meta.updateTag({ property: 'og:type', content: 'website' }, "property='og:type'");
 
-      // Twitter Card
-      { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: title },
-      { name: 'twitter:description', content: description },
-      { name: 'twitter:image', content: image },
-    ]);
+    // Twitter Card
+    this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' }, "name='twitter:card'");
+    this.meta.updateTag({ name: 'twitter:title', content: title }, "name='twitter:title'");
+    this.meta.updateTag({ name: 'twitter:description', content: description }, "name='twitter:description'");
+    this.meta.updateTag({ name: 'twitter:image', content: image }, "name='twitter:image'");
   }
 }
