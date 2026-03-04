@@ -12,7 +12,7 @@ import localeTrExtra from '@angular/common/locales/extra/tr';
 import localeFr from '@angular/common/locales/fr';
 import localePt from '@angular/common/locales/pt';
 import localeTr from '@angular/common/locales/tr';
-import { Component, inject, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageCode, LocaleData } from './core/interfaces';
@@ -22,8 +22,9 @@ import { LanguageCode, LocaleData } from './core/interfaces';
   imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class App implements OnInit {
+export class App {
   readonly availableLanguages: Readonly<Record<LanguageCode, LocaleData>> = {
     de: [localeDe, localeDeExtra],
     en: [localeEn, localeEnExtra],
@@ -43,9 +44,7 @@ export class App implements OnInit {
         registerLocaleData(core, language, extra);
       },
     );
-  }
 
-  public ngOnInit(): void {
     const language: string = this.translate.getBrowserLang() || 'en';
     this.document.documentElement.lang = language;
     this.translate.use(language);

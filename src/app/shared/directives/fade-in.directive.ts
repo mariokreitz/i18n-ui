@@ -2,7 +2,6 @@ import { Directive, ElementRef, inject, OnDestroy, OnInit } from '@angular/core'
 
 @Directive({
   selector: '[appFadeIn]',
-  standalone: true,
 })
 export class FadeInDirective implements OnInit, OnDestroy {
   private readonly element: ElementRef<HTMLElement> = inject(ElementRef);

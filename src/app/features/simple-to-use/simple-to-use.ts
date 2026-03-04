@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FaIconComponent, IconDefinition } from '@fortawesome/angular-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons/faCheck';
 import { faWandMagicSparkles } from '@fortawesome/free-solid-svg-icons/faWandMagicSparkles';
@@ -14,6 +14,7 @@ import { EnvironmentService } from '../../shared/services/environment';
   imports: [CodeCard, CodeCardTitle, CodeCardBody, HighlightCodeDirective, TranslatePipe, FaIconComponent],
   templateUrl: './simple-to-use.html',
   styleUrl: './simple-to-use.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SimpleToUse {
   public readonly aiIcon: IconDefinition = faWandMagicSparkles;
