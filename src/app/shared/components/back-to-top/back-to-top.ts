@@ -1,45 +1,38 @@
 import { DOCUMENT, ViewportScroller } from '@angular/common';
-import { Component, inject, OnDestroy, OnInit, signal, WritableSignal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, DestroyRef, inject, signal } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FaIconComponent, IconDefinition } from '@fortawesome/angular-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons/faArrowUp';
 import { TranslatePipe } from '@ngx-translate/core';
-import { fromEvent, Subscription, throttleTime } from 'rxjs';
+import { fromEvent, throttleTime } from 'rxjs';
 
 @Component({
   selector: 'app-back-to-top',
-  standalone: true,
   imports: [FaIconComponent, TranslatePipe],
   templateUrl: './back-to-top.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BackToTopComponent implements OnInit, OnDestroy {
+export class BackToTopComponent {
   public readonly arrowUpIcon: IconDefinition = faArrowUp;
-  private readonly _isVisible: WritableSignal<boolean> = signal<boolean>(false);
+  private readonly _isVisible = signal<boolean>(false);
   public readonly isVisible = this._isVisible.asReadonly();
 
   private readonly document: Document = inject(DOCUMENT);
   private readonly viewportScroller: ViewportScroller = inject(ViewportScroller);
-  private scrollSubscription: Subscription | undefined;
+  private readonly destroyRef: DestroyRef = inject(DestroyRef);
 
-  public ngOnInit(): void {
+  constructor() {
     if (typeof window !== 'undefined') {
-      this.scrollSubscription = fromEvent(window, 'scroll')
-        .pipe(throttleTime(100))
+      fromEvent(window, 'scroll')
+        .pipe(throttleTime(100), takeUntilDestroyed(this.destroyRef))
         .subscribe(() => {
-          this.checkScrollPosition();
+          const yOffset: number = window.scrollY || this.document.documentElement.scrollTop;
+          this._isVisible.set(yOffset > 400);
         });
     }
   }
 
-  public ngOnDestroy(): void {
-    this.scrollSubscription?.unsubscribe();
-  }
-
   public scrollToTop(): void {
     this.viewportScroller.scrollToPosition([0, 0]);
-  }
-
-  private checkScrollPosition(): void {
-    const yOffset: number = window.scrollY || this.document.documentElement.scrollTop;
-    this._isVisible.set(yOffset > 400);
   }
 }
