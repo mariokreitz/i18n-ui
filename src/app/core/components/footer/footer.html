@@ -8,7 +8,7 @@
     </p>
     <p class="text-sm">
       Made with ❤️ by
-      <a [href]="githubProfileUrl" target="_blank"
+      <a [href]="githubProfileUrl" rel="noopener noreferrer" target="_blank"
         >Mario Kreitz
         <fa-icon [icon]="faExt" />
         <span class="sr-only">{{ 'a11y.opensInNewTab' | translate }}</span>
@@ -18,9 +18,9 @@
   <nav class="flex flex-col space-y-4">
     <h6 class="text-xl">{{ 'footer.quickLinks' | translate }}</h6>
     <ul class="space-y-2">
-      @for (quickLink of githubQuickLinks; track $index) {
+      @for (quickLink of githubQuickLinks; track quickLink.name) {
         <li>
-          <a [href]="quickLink.url" target="_blank"
+          <a [href]="quickLink.url" rel="noopener noreferrer" target="_blank"
             >{{ quickLink.name }}
             <fa-icon [icon]="quickLink.faIcon" />
             <span class="sr-only">{{ 'a11y.opensInNewTab' | translate }}</span>
@@ -32,7 +32,7 @@
 
   <p>
     Open Source •
-    <a [href]="githubLicenseUrl" target="_blank"
+    <a [href]="githubLicenseUrl" rel="noopener noreferrer" target="_blank"
       >MIT License
       <fa-icon [icon]="faExt" class="ml-2" />
       <span class="sr-only">{{ 'a11y.opensInNewTab' | translate }}</span></a
