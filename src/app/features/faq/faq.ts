@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
-import { FAQ_ITEMS } from '../../core/constants/faq.constant';
+import { FAQ_ITEMS } from '../../core/constants';
 import { FaqItem } from '../../core/interfaces';
 import { FadeInDirective } from '../../shared/directives';
 
