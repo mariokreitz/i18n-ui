@@ -24,8 +24,8 @@
         <button
           #langButton
           (click)="onSelectLang(lang)"
-          [class.bg-brand-secondary]="isCurrentLanguage()(lang)"
-          [class.text-i18n-white]="isCurrentLanguage()(lang)"
+          [class.bg-brand-secondary]="isCurrentLanguage(lang)"
+          [class.text-i18n-white]="isCurrentLanguage(lang)"
           class="focus-visible:ring-brand-primary text-text-primary hover:bg-bg-surface-active flex w-full items-center justify-between gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-all duration-200 focus:outline-none focus-visible:ring-2"
           role="menuitem"
           type="button"

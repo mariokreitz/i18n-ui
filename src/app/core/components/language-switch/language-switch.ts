@@ -1,7 +1,7 @@
 import { DOCUMENT } from '@angular/common';
 import {
+  ChangeDetectionStrategy,
   Component,
-  computed,
   DestroyRef,
   ElementRef,
   inject,
@@ -27,14 +27,11 @@ const HUMAN_TRANSLATED_LANGUAGES: readonly string[] = ['de', 'en'];
   imports: [FaIconComponent, TranslatePipe, ClickOutsideDirective],
   templateUrl: './language-switch.html',
   styleUrl: './language-switch.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LanguageSwitch implements OnInit {
   public readonly langIcon: IconDefinition = faLanguage;
   public readonly aiIcon: IconDefinition = faWandMagicSparkles;
-  public isCurrentLanguage = computed<(lang: Language) => boolean>(() => {
-    const current: string | null = this.currentLanguage();
-    return (lang: Language) => lang === current;
-  });
   private readonly toggleBtn: Signal<ElementRef<HTMLButtonElement>> = viewChild.required<ElementRef<HTMLButtonElement>>('toggleBtn');
   private readonly langButtons: Signal<readonly ElementRef<HTMLButtonElement>[]> =
     viewChildren<ElementRef<HTMLButtonElement>>('langButton');
@@ -44,6 +41,7 @@ export class LanguageSwitch implements OnInit {
   public readonly isMenuOpen: Signal<boolean> = this._isMenuOpen.asReadonly();
   private readonly _currentLanguage: WritableSignal<Language | null> = signal<Language | null>(null);
   public readonly currentLanguage: Signal<Language | null> = this._currentLanguage.asReadonly();
+  // Not a signal — only drives imperative focus management, never rendered
   private focusedIndex = -1;
   private readonly translate: TranslateService = inject(TranslateService);
   private readonly document: Document = inject(DOCUMENT);
@@ -55,6 +53,10 @@ export class LanguageSwitch implements OnInit {
   }
 
   public isAiTranslated = (lang: Language): boolean => !HUMAN_TRANSLATED_LANGUAGES.includes(lang);
+
+  public isCurrentLanguage(lang: Language): boolean {
+    return this.currentLanguage() === lang;
+  }
 
   public ngOnInit(): void {
     // Subscribe to language changes to keep currentLanguage in sync
