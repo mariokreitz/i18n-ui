@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { BackToTopComponent } from '../../../shared/components/back-to-top/back-to-top';
 import { ToastComponent } from '../../../shared/components/toast/toast';
@@ -11,5 +11,6 @@ import { Header } from '../../components/header/header';
   templateUrl: './root-layout.html',
   styleUrl: './root-layout.css',
   host: { class: 'min-h-screen flex flex-col' },
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RootLayout {}
