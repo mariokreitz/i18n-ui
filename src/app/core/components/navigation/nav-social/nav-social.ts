@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 import { TranslatePipe } from '@ngx-translate/core';
 import { SOCIAL_MEDIA_LINKS } from '../../../constants';
@@ -9,7 +9,8 @@ import { SocialMediaLink } from '../../../interfaces';
   imports: [FaIconComponent, TranslatePipe],
   templateUrl: './nav-social.html',
   styleUrl: './nav-social.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavSocial {
-  public readonly SOCIAL_MEDIA_LINKS: SocialMediaLink[] = SOCIAL_MEDIA_LINKS;
+  public readonly socialMediaLinks: SocialMediaLink[] = SOCIAL_MEDIA_LINKS;
 }
