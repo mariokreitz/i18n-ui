@@ -1,0 +1,329 @@
+{
+  "src/index.html": {
+    "hash": "64e078223188b301f38d8f76035ffac678f8b9445cae83095dcaacf9faed19c4",
+    "keys": []
+  },
+  "src/environments/environment.development.ts": {
+    "hash": "3b281745dbd5c6bb9cbb6ea2185a9194835d17eb86d29d58777ef496c7198277",
+    "keys": []
+  },
+  "src/environments/environment.ts": {
+    "hash": "5a62d3176f83236381ae95c4af3065a670c394b8a4ef6d4eed14ded3e709b450",
+    "keys": []
+  },
+  "src/main.ts": {
+    "hash": "a263a4fdfdcf2727902fa93b40cde9fe3600dac6f2229b9c0dc171aa8f016931",
+    "keys": []
+  },
+  "src/app/app.spec.ts": {
+    "hash": "a3e0fddc8ea7206b5139c06ea939667500180e71d56d0feeb90cc9cd2db05774",
+    "keys": []
+  },
+  "src/app/app.config.ts": {
+    "hash": "ce9e37fd26cb7d9dab4880e5f7a32b2c217ccf3a36708670442449ffdd9af286",
+    "keys": []
+  },
+  "src/app/app.ts": {
+    "hash": "2f8c0852bfbe949a2e75698e7e5aa7cf6b4b77238c3f545146eea79364a15b58",
+    "keys": []
+  },
+  "src/app/app.html": {
+    "hash": "e49ed22c5950dea51898393ce00c3caa9e0de07e9d179ff62b963e0977909a1c",
+    "keys": []
+  },
+  "src/app/shared/utils/one-click-copy.util.ts": {
+    "hash": "21b66231e12ea033f3862f22f4a56dac67beef1f1d153f304b36ebf5edffb8b6",
+    "keys": []
+  },
+  "src/app/shared/directives/index.ts": {
+    "hash": "33cb211c84afaa7113f143ef4dea1b5cc1d03b77fe51d1558fd3c9317fdc24a3",
+    "keys": []
+  },
+  "src/app/shared/services/environment.spec.ts": {
+    "hash": "ae9b98ce05ecfbe69d8bff34d16958b056483c774bdda9c3249008648672cd16",
+    "keys": []
+  },
+  "src/app/shared/services/environment.ts": {
+    "hash": "4ace657604245e6eeac1d6f6b0457f57f15f9d1696477092676d4c20cf26a26c",
+    "keys": []
+  },
+  "src/app/shared/directives/highlight-code.directive.ts": {
+    "hash": "c536f73e62ce390e9b0fd7dfbd8baa173b2afb24852005682e341ee9a231db3d",
+    "keys": []
+  },
+  "src/app/shared/directives/click-outside.directive.ts": {
+    "hash": "cf0b45ca9c2232daab0dfe91037d8867957621d56699e9bade946921dccf4a0b",
+    "keys": []
+  },
+  "src/app/shared/directives/fade-in.directive.ts": {
+    "hash": "d17556952bb66652bbf13599ff2f578b904538faa60ab3d19267f33dc654062c",
+    "keys": []
+  },
+  "src/app/app.routes.ts": {
+    "hash": "4c6d4e58e4b37e1a7d214f8f876a43a87ee9b7809202000ca447524c102d41ae",
+    "keys": []
+  },
+  "src/app/shared/utils/index.ts": {
+    "hash": "a287b6d2644f3013be91fc41df09ae2d8831df489abfdf975ad6405d88c5d717",
+    "keys": []
+  },
+  "src/app/pages/home/home.ts": {
+    "hash": "b36e9f7d478ec0def92d9bb77f05ef2b77010a0c44539d236c45f71c776a092a",
+    "keys": []
+  },
+  "src/app/pages/home/home.spec.ts": {
+    "hash": "fa8469747f20ec0b50d276ef09e0e49c270836ece72347140f9eb731650ca6ec",
+    "keys": []
+  },
+  "src/app/pages/home/home.html": {
+    "hash": "a802b108ceb8584e9c3460ed76541e20d9516e9aa3cb529ef369ddfd41eacc7a",
+    "keys": []
+  },
+  "src/app/core/services/toast.service.ts": {
+    "hash": "e47737a556d4d63f25d57ff38ab4baf1341fb9afd637fa5503f6585ea4a5f1a8",
+    "keys": []
+  },
+  "src/app/core/services/index.ts": {
+    "hash": "faefa969e73bdc362e7f95c4c8075e3e0e1ee01af372ab3d517b6b5288d8eba8",
+    "keys": []
+  },
+  "src/app/core/interfaces/social-media-link.interface.ts": {
+    "hash": "499d94905ae9d5b8188c88eb47c9f17b93394c4efd869c6825c845ce6d810277",
+    "keys": []
+  },
+  "src/app/core/interfaces/index.ts": {
+    "hash": "1462f6cf6ecbf37207588c0b05b3f07d11aba58716d867f3d5bfd8b091702152",
+    "keys": []
+  },
+  "src/app/core/interfaces/i18n-excel-manager-feature.interface.ts": {
+    "hash": "82494e58cfc38319be31f4e01f2bf0e03e90c1e29d8eff33c4324c8d436366d5",
+    "keys": []
+  },
+  "src/app/core/interfaces/app-language.interface.ts": {
+    "hash": "e07a0ffd6caa53b985799ee9db2469b4d70614263d48a9a862b693c3c1b68e1d",
+    "keys": []
+  },
+  "src/app/core/interfaces/faq.interface.ts": {
+    "hash": "cc1eee88ea33e98ca135242249fdb507b174bc7bf652fd3dbf92afb2f0cb9f47",
+    "keys": []
+  },
+  "src/app/core/constants/index.ts": {
+    "hash": "fb3420ac8cc5d570de8c864b1729e5b451a347b8636f4613fcd7e135ece519d0",
+    "keys": []
+  },
+  "src/app/core/constants/i18n-excel-manager.constant.ts": {
+    "hash": "71449a1611f095673390d9865abde5d5acc71421c133a2c9ce980b2aa235fa08",
+    "keys": []
+  },
+  "src/app/core/constants/social-media-links.constant.ts": {
+    "hash": "2400ff8d61db1922c7c686466bbc971b2227d12275559ac43679b0b49ec1e130",
+    "keys": []
+  },
+  "src/app/core/constants/footer-quick-links.constant.ts": {
+    "hash": "89220e83c231be8117ba3dfcc3a1a7263927120c837650d9207b2a6b80c86076",
+    "keys": []
+  },
+  "src/app/features/hero/hero.ts": {
+    "hash": "02a86b4992ad7582df7eab23614efc2dd2f3977c447392dd3662ee1fc08596dd",
+    "keys": []
+  },
+  "src/app/features/hero/hero.spec.ts": {
+    "hash": "e68756abe9f6d2be5d62d213e5bd7dff2ccbb29432cb43ab04d6de1e1f4bbb62",
+    "keys": []
+  },
+  "src/app/core/constants/faq.constant.ts": {
+    "hash": "0047754a9158b7c1b23e799c9496cc4bc85069fd810197a85688188d5b76c2f6",
+    "keys": []
+  },
+  "src/app/features/hero/hero.html": {
+    "hash": "dc56f60e6d58f14f038b08decd27b0b1da3abb27a19548d4de24e068d001b4f8",
+    "keys": ["hero.newBadge", "hero.newFeature", "hero.title", "hero.subTitle", "a11y.scrollDown"]
+  },
+  "src/app/features/simple-to-use/simple-to-use.ts": {
+    "hash": "23c2d9b68fb0ab2fa275cd439a3ee781081de62714be765f238b057962d0551c",
+    "keys": []
+  },
+  "src/app/features/faq/faq.ts": {
+    "hash": "500554f95e857d8bc1f27e12a4e9b7b38cf0af3f4d9594975cbc3d1a1dee8f3b",
+    "keys": []
+  },
+  "src/app/features/simple-to-use/simple-to-use.html": {
+    "hash": "015af4ae509682c50fbc5c44c281f5efd477db6d37ed8ad7922254a2466cb3f1",
+    "keys": [
+      "simpleToUse.codeSection.title",
+      "simpleToUse.codeSection.description",
+      "a11y.codeRegionLabel",
+      "simpleToUse.aiSection.aiBadge",
+      "simpleToUse.aiSection.title",
+      "simpleToUse.aiSection.description",
+      "simpleToUse.aiSection.aiTranslating"
+    ]
+  },
+  "src/app/features/simple-to-use/simple-to-use.spec.ts": {
+    "hash": "eaf6554c75c5ae3a7b91abfcb668cc9e6ec43b6a1a6d468ef67da3a55f4acf2a",
+    "keys": []
+  },
+  "src/app/features/faq/faq.html": {
+    "hash": "a175570f179d6ec848554b1c18605cff214f6899137f154a3bb19c12744151bc",
+    "keys": ["faq.title", "faq.description"]
+  },
+  "src/app/features/getting-started/getting-started.ts": {
+    "hash": "709c17973d6edb3df7fe7bfea9149bbd2f894bf3d2fc4de2fcb5064de0716233",
+    "keys": []
+  },
+  "src/app/features/getting-started/getting-started.spec.ts": {
+    "hash": "b76f5760dbb6be45edef7ac0e547b3856a130b81bf37a5ba773b4dd52284c5e9",
+    "keys": []
+  },
+  "src/app/features/faq/faq.spec.ts": {
+    "hash": "ccd349f993dc35e99800a2d5c46bdbecb77a816ff7bf4997ae0334caccbc1191",
+    "keys": []
+  },
+  "src/app/features/features/features.ts": {
+    "hash": "445135cc7ba91c86a54a6bf0ef6fa243d4f8774bd683207bf24b234e32ef1c33",
+    "keys": []
+  },
+  "src/app/features/features/features.html": {
+    "hash": "6738ced6ee6156eb0086c945b84549c7cb6cc0843e1846334ff55f3448d5212e",
+    "keys": [
+      "features.title",
+      "features.description",
+      "features.coreConversion.title",
+      "features.codebaseAnalysis.title",
+      "features.aiPowered.title",
+      "features.developerExperience.title"
+    ]
+  },
+  "src/app/features/getting-started/getting-started.html": {
+    "hash": "e386f39a4c46680772cfc83f5ab6edb11b6047c9a1e3009b495bf3b404c1688b",
+    "keys": ["gettingStarted.title", "gettingStarted.description", "a11y.copyCommand"]
+  },
+  "src/app/features/features/features.spec.ts": {
+    "hash": "cc6c651a61280560502ce745f68b7e694ac5451e2f6245c95a7b872e22073128",
+    "keys": []
+  },
+  "src/app/shared/components/toast/toast.html": {
+    "hash": "b78608ebccddfbba3282ef0f6f5b59e94dd11f2b1be59dae90006d7073ebd6ca",
+    "keys": []
+  },
+  "src/app/shared/components/toast/toast.ts": {
+    "hash": "5a7344459991d3392f615eefa21181bf938d019f5401ac185b31ba58066b571a",
+    "keys": []
+  },
+  "src/app/shared/components/code-card-body/code-card-body.html": {
+    "hash": "ef22c9a11dcb8dc332baed9474909e971010fea6136f624c6af693a33aee7e51",
+    "keys": []
+  },
+  "src/app/shared/components/code-card-body/code-card-body.ts": {
+    "hash": "776c41210419d9555a206edd2bc35d494e79db359d2ddb7a9b3a3916f70ab9a7",
+    "keys": []
+  },
+  "src/app/shared/components/back-to-top/back-to-top.ts": {
+    "hash": "936d5ef5f543e65d2c29f71feb2167e1a4155067c480ab40177ea46c122c16d5",
+    "keys": []
+  },
+  "src/app/shared/components/code-card-body/code-card-body.spec.ts": {
+    "hash": "a6665bf7cdbaa6d3e49670e8a14148c60d2dea6d3a88fe44ca897ec259758c44",
+    "keys": []
+  },
+  "src/app/shared/components/feature-card/feature-card.ts": {
+    "hash": "f5b8a56d0c47f25d1ff37994d4c88f6481d9116ef7ae68bfc59a37324d167d20",
+    "keys": []
+  },
+  "src/app/shared/components/feature-card/feature-card.html": {
+    "hash": "d7c426234f122f3e4fcf4cc7fb96f53cff71389e234c225cd2a685ada70d0369",
+    "keys": []
+  },
+  "src/app/shared/components/code-card/code-card.spec.ts": {
+    "hash": "12bd4972de9e394b5847aa6aab0536034fcf2c17bc10411771739fb404c42bbe",
+    "keys": []
+  },
+  "src/app/shared/components/code-card/code-card.ts": {
+    "hash": "e50d6158cc62bf2521393581cc5ae40532f0a2bf664e7347d0584a1d4ac3e7c9",
+    "keys": []
+  },
+  "src/app/shared/components/code-card/code-card.html": {
+    "hash": "bab9dc302f55e301f24f3ba46a1e2a46d4ba7b64ebbb27f3aace78567be24513",
+    "keys": []
+  },
+  "src/app/shared/components/back-to-top/back-to-top.html": {
+    "hash": "25b3ef28e93b02770e652129b57686188f8ff2485b9d88da80e4bbf751eba081",
+    "keys": ["a11y.scrollToTop"]
+  },
+  "src/app/shared/components/code-card-title/code-card-title.spec.ts": {
+    "hash": "bfb1549176cd7acd21e15ffabd0bb4c5cedc7ad66762aa2e67832f3663c1c5f9",
+    "keys": []
+  },
+  "src/app/core/layouts/root-layout/root-layout.ts": {
+    "hash": "1de5959689154e5e4ad77f3585842026ca6e6cff8dbbb474e5ce6eb60d6d04f7",
+    "keys": []
+  },
+  "src/app/shared/components/code-card-title/code-card-title.ts": {
+    "hash": "b3268d8e6ff100402089b52f820dbb79f411e7fef86a33bf58c6b4665320797a",
+    "keys": []
+  },
+  "src/app/shared/components/code-card-title/code-card-title.html": {
+    "hash": "1eebcfde81446cf74ce69b2329ebfa31163bbf5a17edd971ff0c8e97495ee2d6",
+    "keys": []
+  },
+  "src/app/shared/components/feature-card/feature-card.spec.ts": {
+    "hash": "23a7e67207cfaee6b81927be5f836a38baab00f9af80cd3f6ca0bfeec355e116",
+    "keys": []
+  },
+  "src/app/core/layouts/root-layout/root-layout.html": {
+    "hash": "d3908c77bfd48044a564d2bb145a92cee449f4b8c362a3c14670a27753229d79",
+    "keys": ["a11y.skipToContent"]
+  },
+  "src/app/core/components/language-switch/language-switch.ts": {
+    "hash": "a9660ff45e866a97b8ad5b72d98e78c4e8f5d560c448a082661c3745ea465dcc",
+    "keys": []
+  },
+  "src/app/core/components/language-switch/language-switch.spec.ts": {
+    "hash": "e928e9a83c01988d0a0340304ed82474f3f8107392857c15b536e1b1e7744df7",
+    "keys": []
+  },
+  "src/app/core/layouts/root-layout/root-layout.spec.ts": {
+    "hash": "9d8944fb66220b7045ab155c4cae9e20624b68fa4284948d907966c1b14ea2ca",
+    "keys": []
+  },
+  "src/app/core/components/language-switch/language-switch.html": {
+    "hash": "450e086defe132ce447366a6db66513b348a8ce186480a1a3c96af13589e5ce2",
+    "keys": ["a11y.languageSwitcherLabel", "a11y.aiTranslatedTooltip"]
+  },
+  "src/app/core/components/footer/footer.ts": {
+    "hash": "456613dcce16be731251a6a1a3b39c9be90de7c1673a972b063b39af7bb0018a",
+    "keys": []
+  },
+  "src/app/core/components/footer/footer.spec.ts": {
+    "hash": "378849eb3cd88da34ea5c605344d1bcd9f88a5bfb8d62214737b337255b69909",
+    "keys": []
+  },
+  "src/app/core/components/footer/footer.html": {
+    "hash": "d3d9f5e2eccf107041129176a04a2ed1bec67be9b6ecfae625226216480ac5f4",
+    "keys": ["a11y.opensInNewTab", "footer.quickLinks"]
+  },
+  "src/app/core/components/header/header.ts": {
+    "hash": "65067fb2d338214f74860c952dada3059fb89724633efb963bee723f725ca5fe",
+    "keys": []
+  },
+  "src/app/core/components/header/header.html": {
+    "hash": "7945b152cc0cb05dd68cb47003e59a32e7364198f227a642c8adfa2a7dad6f3d",
+    "keys": ["a11y.reloadPage"]
+  },
+  "src/app/core/components/header/header.spec.ts": {
+    "hash": "5f29904cbcf7890a13bd8e32a88e51d815f65d83992cceb8e3a6911701a04769",
+    "keys": []
+  },
+  "src/app/core/components/navigation/nav-social/nav-social.ts": {
+    "hash": "e6363e10cb78f732e94bc05b9a6a51c94a17bc13ad4dcb2382099ecc51abd80b",
+    "keys": []
+  },
+  "src/app/core/components/navigation/nav-social/nav-social.html": {
+    "hash": "b2a032e8b138618c43397409e8f9e91770a15cdc6e0cab165e6ddd121746538a",
+    "keys": ["a11y.socialNav", "a11y.socialLink", "a11y.opensInNewTab"]
+  },
+  "src/app/core/components/navigation/nav-social/nav-social.spec.ts": {
+    "hash": "ed1b1a78b338145056634c4824c1ca86745e888deba5fb81972a811bfb0991b8",
+    "keys": []
+  }
+}

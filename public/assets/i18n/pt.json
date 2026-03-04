@@ -1,5 +1,6 @@
 {
   "a11y": {
+    "aiTranslatedTooltip": "Traduzido usando IA",
     "codeRegionLabel": "Exemplo de código em {{lang}}",
     "copyCommand": "Copiar comando de instalação para a área de transferência",
     "languageSwitcherLabel": "Selecionar um idioma",

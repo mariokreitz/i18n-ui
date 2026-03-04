@@ -1,5 +1,6 @@
 {
   "a11y": {
+    "aiTranslatedTooltip": "Yapay zeka ile çevrildi",
     "codeRegionLabel": "{{lang}} dilinde kod örneği",
     "copyCommand": "Kurulum komutunu panoya kopyala",
     "languageSwitcherLabel": "Bir dil seçin",
