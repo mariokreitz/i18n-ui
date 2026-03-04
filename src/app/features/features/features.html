@@ -7,7 +7,7 @@
   <section appFadeIn class="flex flex-col gap-8">
     <h3 class="flex items-center gap-4"><span class="bg-i18n-blue h-1 w-8"></span>{{ 'features.coreConversion.title' | translate }}</h3>
     <div class="grid grid-cols-1 place-items-center gap-8 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-      @for (feature of coreFeatures; track $index) {
+      @for (feature of coreFeatures; track feature.title) {
         <app-feature-card [feature]="feature" />
       }
     </div>
@@ -16,7 +16,7 @@
   <section appFadeIn class="flex flex-col gap-8">
     <h3 class="flex items-center gap-4"><span class="bg-i18n-blue h-1 w-8"></span>{{ 'features.codebaseAnalysis.title' | translate }}</h3>
     <div class="grid grid-cols-1 place-items-center gap-8 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-      @for (feature of codeAnalysisFeature; track $index) {
+      @for (feature of codeAnalysisFeature; track feature.title) {
         <app-feature-card [feature]="feature" />
       }
     </div>
@@ -25,7 +25,7 @@
   <section appFadeIn class="flex flex-col gap-8">
     <h3 class="flex items-center gap-4"><span class="bg-i18n-blue h-1 w-8"></span>{{ 'features.aiPowered.title' | translate }}</h3>
     <div class="grid grid-cols-1 place-items-center gap-8 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-      @for (feature of aiPoweredFeature; track $index) {
+      @for (feature of aiPoweredFeature; track feature.title) {
         <app-feature-card [feature]="feature" />
       }
     </div>
@@ -36,7 +36,7 @@
       <span class="bg-i18n-blue h-1 w-8"></span>{{ 'features.developerExperience.title' | translate }}
     </h3>
     <div class="grid grid-cols-1 place-items-center gap-8 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-      @for (feature of developerExperience; track $index) {
+      @for (feature of developerExperience; track feature.title) {
         <app-feature-card [feature]="feature" />
       }
     </div>
