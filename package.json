@@ -41,7 +41,7 @@
     "eslint": "^9.39.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
-    "i18n-excel-manager": "^2.2.0",
+    "i18n-excel-manager": "^2.3.0",
     "jsdom": "^27.1.0",
     "postcss": "^8.5.3",
     "prettier": "^3.8.1",
