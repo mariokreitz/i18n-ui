@@ -20,6 +20,6 @@ export class Hero {
   private readonly viewportScroller: ViewportScroller = inject(ViewportScroller);
 
   public scrollToGettingStarted(): void {
-    this.viewportScroller.scrollToPosition([0, window.innerHeight]);
+    this.viewportScroller.scrollToAnchor('getting-started');
   }
 }
