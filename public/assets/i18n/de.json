@@ -105,6 +105,10 @@
   "footer": {
     "quickLinks": "Schnellzugriffe"
   },
+  "deprecation": {
+    "badge": "Veraltet",
+    "message": "Dieses Projekt ist veraltet und wird nicht mehr gepflegt. Bitte wechsle zu"
+  },
   "gettingStarted": {
     "description": "Installiere das Tool über npm und führe einen einzigen Befehl aus, um deine i18n-JSON-Dateien in Excel zu konvertieren oder umgekehrt.",
     "title": "In Sekundenschnelle starten"

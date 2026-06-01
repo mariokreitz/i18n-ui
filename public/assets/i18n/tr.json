@@ -105,6 +105,10 @@
   "footer": {
     "quickLinks": "Hızlı Bağlantılar"
   },
+  "deprecation": {
+    "badge": "Kullanilmiyor",
+    "message": "Bu proje kullanilmiyor ve artik bakimi yapilmiyor. Lutfen suna gecin"
+  },
   "gettingStarted": {
     "description": "npm aracılığıyla yükleyin ve i18n JSON dosyalarınızı Excel'e veya tersine dönüştürmek için tek bir komut çalıştırın.",
     "title": "Saniyeler içinde başlayın"

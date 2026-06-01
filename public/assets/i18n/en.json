@@ -105,6 +105,10 @@
   "footer": {
     "quickLinks": "Quick Links"
   },
+  "deprecation": {
+    "badge": "Deprecated",
+    "message": "This project is deprecated and no longer maintained. Please switch to"
+  },
   "gettingStarted": {
     "description": "Install via npm and run a single command to convert your i18n JSON files to Excel or vice versa.",
     "title": "Get started in seconds"

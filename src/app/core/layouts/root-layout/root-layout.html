@@ -4,6 +4,25 @@
 >
   {{ 'a11y.skipToContent' | translate }}
 </a>
+<section class="border-b border-amber-400/60 bg-amber-300/10" role="note">
+  <div class="container mx-auto flex flex-wrap items-center gap-3 px-4 py-2">
+    <span class="rounded-full border border-amber-300/70 bg-amber-400/15 px-2 py-0.5 text-xs font-semibold tracking-wide uppercase">
+      {{ 'deprecation.badge' | translate }}
+    </span>
+    <p class="text-text-primary text-sm">
+      {{ 'deprecation.message' | translate }}
+      <a
+        class="font-semibold underline underline-offset-2"
+        href="https://github.com/mariokreitz/langsync"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        &#64;mariokreitz/langsync
+      </a>
+      <span class="sr-only">{{ 'a11y.opensInNewTab' | translate }}</span>
+    </p>
+  </div>
+</section>
 <header class="border-border-subtle bg-bg-page/70 backdrop-blur-glass sticky top-0 z-50 w-full border-b transition-all" id="header">
   <app-header />
 </header>
